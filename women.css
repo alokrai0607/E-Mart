@@ -1,0 +1,45 @@
+#banner1{
+    /* margin-left: 70px; */
+    }
+    #content1{
+        height: fit-content;
+        line-height: 0.5in;
+        text-align: center;
+        font-size: larger;
+    }
+    #designer{
+        width: 90%;
+        display: flex;
+        margin: auto;
+        margin-top: 150px;
+        margin-left: 100px;
+        height: 600px;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 200px;
+    }
+    #DESIGNERS{
+        margin-top: -50px;
+        margin-bottom: 100px;
+        width: 350px;
+        text-align: center;
+        line-height: 0.2in;
+        background-color: white;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }    
+    #part1{
+        background-color: rgb(236, 240, 240);
+        text-align: center;
+    }
+    .watch{
+    margin-top: 100px;
+    
+    }
+    #part3{
+        margin-top: 300px;
+       margin-left:300px;
+    }
+    #part4{
+        margin-top: 100px;
+        margin-left: 80px;
+    }
