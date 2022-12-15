@@ -1,12 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Register_page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /*--------------------navbar-------------*/
+        #nav {
+            height: 110px;
+            width: 100%;
+            border: 1px solid white;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        }
+
+        #nav_1 {
+            height: 30%;
+            width: 100%;
+            border: 1px solid white;
+            display: flex;
+            /*position: relative;*/
+        }
+
+        #nav_2 {
+            height: 60%;
+            width: 100%;
+            border: 1px solid white;
+
+        }
+
+        #nav_3 {
+            height: 10%;
+            width: 100%;
+            border: 1px solid white;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        #nav_1_1 {
+            height: 100%;
+            width: 33.3%;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        #nav_1_2 {
+            height: 100%;
+            width: 33.3%;
+            border: 1px solid white;
+        }
+
+        #nav_1_3 {
+            height: 100%;
+            width: 33%;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #select_btn {
+            width: auto;
+            border: 1px solid white;
+            text-decoration: underline;
+            font-size: 13px;
+            font-weight: lighter;
+        }
+
+        #select_btn:hover {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        #customer_btn {
+            font-weight: lighter;
+
+            font-size: 13px;
+            color: black;
+        }
+
+        #customer_btn:hover {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        #nav_1_3 div {
+            font-size: 13px;
+            font-weight: lighter;
+
+        }
+
+        #register_btn:hover {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        #login_btn:hover {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        #nav_1_3 a {
+            color: black;
+        }
+
+        #nav_1_3 a:hover {
+            font-weight: bolder;
+        }
+
+        #nav_1_2 {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            font-weight: lighter;
+            color: black;
+        }
+
+        #nav_2_1 {
+            height: 100%;
+            width: 80%;
+            border: 1px solid white;
+            margin: auto;
+            display: flex;
+        }
+
+        #nav_2_1_1 {
+            height: 100%;
+            width: 33%;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #nav_2_1_2 {
+            height: 100%;
+            width: 33%;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+        }
+
+        #nav_2_1_3 {
+            height: 100%;
+            width: 33%;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #nav_2_1_1 a {
+            font-weight: lighter;
+            color: black;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        #nav_2_1_2 a {
+            display: flex;
+            justify-content: center;
+        }
+
+        #nav_3_1 {
+            height: 84%;
+            width: 80%;
+            border: 1px solid black;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            align-items: center;
+        }
+
+        #nav_3_1 div {
+            font-weight: lighter;
+            color: black;
+            font-size: 13px;
+            text-decoration: none;
+
+        }
+
+        #nav_3_1 a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #nav_3_1 a:hover {
+            color: rgb(117, 113, 113);
+        }
+
+        #nav_3_1 div {
+            height: auto;
+        }
+
+        #nav_2_1_1 a:hover {
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+
+        #new1 {
+            padding: 15px;
+
+        }
+        #nav_bottom{
+            height: 180px;
+            width: 100%;
+            border: 1px solid white;
+            background-color: #F3F3F3;
+            margin-top: 5px;
+            text-align: center;
+          
+        }
+        #nav_bottom *{
+            margin-top: 17px;
+        }
+        #ragistration_page{
+            height: auto;
+            width: 30%;
+            border: 1px solid white;
+            margin: auto;
+            margin-top: 35px;
+            text-align: center;
+           
+        }
+        #ragistration_page *{
+            margin-top: 10px;
+        }
+        #ragistration_page button{
+            width: 100%;
+            height: 50px;
+        }
+        #ragistration_page>#fb{
+            background-color: #3C55A2;
+            border-color: #3C55A2;
+        }
+        #newdiv{
+            display: flex;
+            text-align: justify;
+            margin: 2px;
+            padding: 2px;
+        }
+        .font_reduce{
+            font-size: 10px;
+        }
+        #ragistration_page .input1{
+            width: 99%;
+            height: 50px;
+            background-color: #f9f7f7;
+            border-color: #f9f7f7;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        #regi_btn{
+            background-color: black;
+            color: white;
+        }
+        #footer{
+            height: 160px;
+            width: 100%;
+            border: 1px solid black;
+            background-color: black;
+            margin-top: 30px;
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            
+        }
+        #footer *{
+            margin-top: 30px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="register">
+        <nav id="nav">
+            <div id="nav_1">
+                <div id="nav_1_1">
+                    <div>
+                        <select name="countries" id="select_btn">
+                            <option value="">United States</option>
+                            <option value="">India</option>
+                            <option value="">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <a id="customer_btn" href="">CUSTOMER CARE</a>
+                    </div>
+                </div>
+                <div id="nav_1_2">
+                    <marquee behavior="scroll" direction="left" scrollamount="6">FREE STANDERED SHIPPING ON ORDERS OVER
+                        $100
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WANT
+                        TO RECEIVE YOUR GIFTS IN TIME?&nbsp;|&nbsp;DISCOVER MORE</marquee>
+                </div>
+                <div id="nav_1_3">
+                    <div>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <a href="register.html" id="register_btn">REGISTER</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        <a href="login.html" id="login_btn">LOGIN</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="nav_2">
+                <div id="nav_2_1">
+                    <div id="nav_2_1_1">
+                        <a href="womens.html">WOMEN</a>
+                        <a href="mens.html">MEN</a>
+                        <a href="kids.html">KIDS</a>
+                    </div>
+                    <div id="nav_2_1_2">
+                        <a href="index.html"><img width="90%"
+                                src="C:\Users\Aniket Ghormare\Desktop\-embarrassed-pig-3561\E-Mart.gif" alt=""></a>
+                    </div>
+                    <div id="nav_2_1_3">
+                        <div>
+                            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                        <div>
+                            <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav_3">
+                <div id="nav_3_1">
+                 
+                </div>
+
+            </div>
+        </nav>
+        <div id="nav_bottom">
+              <h3>MYOOX</h3>
+              <P>REGISTRATION</P>
+              <P>Take advantage of a faster checkout and enjoy promotions for registered customers only</P>
+              <h5><a href="">Discover all the benefits</a></h5>
+        </div>
+        <div id="ragistration_page" >
+              <p>REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</p>
+              <button id="fb"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+              <button id="google"><i class="fa fa-google" aria-hidden="true"></i></button>
+              <p>OR WITH TOUR EMAIL</p>
+              <input id="name" class="input1" type="text" placeholder="FIRST NAME*">
+              <input id="lastname" class="input1" type="text" placeholder="LAST NAME*">
+              <input id="email" class="input1" type="email" placeholder="E-MAIL*">
+              <input id="password" class="input1" type="password" placeholder="PASSWORD*">
+              <div>
+                <input class="gender" type="checkbox" value="Female">Female
+                <input class="gender" type="checkbox"value="male">Male
+              </div>
+              <p class="font_reduce">If you are over 18 years old, celebrate your birthday with us: We have a surprise for you.</p>
+              <input id="date_of_birth" class="input1" type="date" placeholder="DATE OF BIRTH">
+              <input id="contact_num" class="input1" type="number" placeholder="CONTECT NUMBER">
+              <P class="font_reduce">I declare that I have read and accept the MYOOX Terms and Conditions of Use</P>
+              <div id="newdiv">
+                <input type="checkbox">
+                <p class="font_reduce">I agree to the use of my personal data in order to be updated on new arrivals, informed about exclusive items and contacted as part of targeted marketing initiatives related to services offered by YOOX.
+                    By analyzing my personal data, order history and browsing habits, YOOX can improve my shopping experience with suggestions that correspond to my interests.
+                    For further information, please consult the Privacy Policy</p>
+
+              </div>
+              <button  id="regi_btn">REGISTER</button>
+        </div>
+        <div id="footer">
+<h4>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</h4>
+<p>LEGAL AREA / PRIVACY POLICY</p>
+        </div>
+    </div>
 </body>
+
 </html>
+<script>
+    let name1=document.getElementById("name")
+    let lastname1=document.getElementById("lastname")
+    let email1=document.getElementById("email")
+    let contactnumber1=document.getElementById("contact_num")
+    let password1=document.getElementById("password")
+    let gender1=document.getElementsByClassName("gender")
+    let birthdate1=document.getElementById("date_of_birth")
+
+    let registration_button1=document.getElementById("regi_btn")
+
+    let arr= JSON.parse(localStorage.getItem("USERINFO")) || []
+    registration_button1.addEventListener("click",newfun)
+    
+    function newfun(){
+        let name=name1.value;
+        let lastname=lastname1.value;
+        let email=email1.value;
+        let contactnumber=contactnumber1.value;
+        let password=password1.value;
+        
+        let birthdate=birthdate1.value;
+
+        let obj={
+            name,
+            lastname,
+            email,
+            contactnumber,
+            password,
+            birthdate
+        }
+        if(name=="" || lastname=="" || email=="" || contactnumber=="" || password=="" || birthdate==""){
+            alert("PLAESE FILL ALL THE DETAILS")
+        }else{
+            arr.push(obj)
+            localStorage.setItem("USERINFO",JSON.stringify(arr))
+            alert("Registration sucessfull")
+            console.log(obj)
+            window.location.assign("login.html")
+
+        }
+       
+     }
+   
+</script>

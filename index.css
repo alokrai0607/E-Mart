@@ -181,7 +181,7 @@
 #footer{
     height: 600px;
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid #F3F3F3;
 }
 #footer_1{
     height: 75%;
@@ -192,7 +192,7 @@
 #footer_2{
     height: 25%;
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid #F3F3F3;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -222,17 +222,17 @@
 .foot{
     height: 100%;
     width: 17%;
-    border: 1px solid white;
+    border: 1px solid #F3F3F3;
     text-align: center;
   
 }
 #footnew{
     height: 100%;
     width: 32%;
-    border: 1px solid white;
+    border: 1px solid #F3F3F3;
      text-align: center;
      background-color: white;
-     
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .foot *{
     margin-top: 10px;
@@ -246,14 +246,19 @@
 #footnew button{
     padding: 10px;
     width: 200px;
+    background-color: black;
+    color: white;
+}
+#footnew button:hover{
+    color: rgb(173, 166, 166);
 }
 #footer_1_2{
     display: flex;
 }
 #footer_1_2 div{
-   height: 100%;
+   height: 97%;
    width: 50%;
-   border: 1px solid white;
+   border: 1px solid #F3F3F3;
 }
 #footer_1_2_1{
     display: flex;
