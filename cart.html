@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart Page</title>
+  <style>
+    /* Write all necessery css here */
+    #cart-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+
+
+    }
+
+    #cart-container>div {
+      text-align: center;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      /* grid-template-columns: repeat(4, 1fr); */
+    }
+
+    #cart-container>div>img {
+      width: 90 px;
+
+    }
+
+    #cart-container>div>button:hover {
+      background-color: green;
+      color: black;
+      font-size: 40px;
+      width: 300px;
+
+    }
+
+    #filter {
+      height: 100px;
+      width: 100%;
+      text-align: center;
+      font-size: 60px;
+      background-color: whitesmoke;
+    }
+
+    #cart-container>div>button {
+      background-color: blueviolet;
+    }
+
+    #cart-container>div>button {
+      background-color: rgb(153, 24, 24);
+      width: 300px;
+      height: 50px;
+      color: aliceblue;
+      border-radius: 6px;
+      border: black;
+      text-align: center;
+
+    }
+
+    #cart-container>div :nth-child(1) {
+      background-color: white;
+      height: 300px;
+      width: 300px;
+      /* grid-template-columns: repeat(4,1fr); */
+    }
+
+    .nav {
+
+      background-color: whitesmoke
+    }
+
+    body {
+      background-color: whitesmoke;
+    }
+
+    .nav>h1 {
+      display: inline;
+      font-size: 100px;
+      color: red
+    }
+
+    #home {
+
+      margin-left: 3000px;
+      margin-top: 10px;
+      padding: 20px 20px 20px 20px;
+      font-size: 350%;
+      color: black;
+      border: 3px solid black;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      text-decoration: none;
+
+    }
+
+    /* #cart {
+
+      margin-left: 300px;
+      margin-top: 10px;
+      padding: 20px 20px 20px 20px;
+      font-size: 350%;
+      color: black;
+      border: 3px solid black;
+      background-color: bisque;
+      text-decoration: none;
+    } */
+
+    #he {
+      margin-left: 200px;
+    }
+
+    #total {
+      font-size: 100px;
+      color: green;
+    }
+
+    #qr {
+
+      height: 200px;
+      width: 200px;
+    }
+
+    #word {
+      color: black;
+      font-size: 100px;
+      margin-left: 50px;
+    }
+
+    @media all and (min-width : 768px) and (max-width : 1024px) {
+
+      #cart-container {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: auto; */
+        gap: 20px;
+
+
+      }
+
+    }
+
+    @media all and (min-width : 320px) and (max-width : 767px) {
+
+      #cart-container {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: auto; */
+        gap: 20px;
+      }
+
+      }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <h1>Welcome to cart Section</h1>
+    <h3>Know Your Product Details</h3>
+    <a id="home" href="./index.html">Home</a>
+    <!-- <a id="cart" href="./cart.html">Cart</a> -->
+    <!-- <div id="word"><img id="qr" src="./QR/istockphoto-828088276-1024x1024.jpg" alt=""></div> -->
+  </div>
+  <h1 id="total">Your Total Price is:- <span id="Cart-total">0</span></h1>
+  <div id="cart-container">
+    <!-- Here Append All the cart Products  -->
+  </div>
+</body>
+<script>
+  // Write all necessery JS here  
+  let cartItems = JSON.parse(localStorage.getItem("cart"));
+  display(cartItems);
+
+  let total = cartItems.reduce((acc, element) => acc + element.Price, 0)
+  document.querySelector("#total").innerText = "YourTotal Cart Price is:-₹" + total
+
+
+//******************************* For Shose Page ********************************//
+
+  function display(cartItems) {
+
+
+    document.querySelector("#cart-container").innerHTML = "";
+
+
+    cartItems.forEach(function (element, index) {
+
+      let div = document.createElement("div");
+
+      let imgProd = document.createElement("img")
+      imgProd.setAttribute("src", element.Avtar)
+
+      let title = document.createElement("h2")
+      title.innerText = element.Title;
+
+      let category = document.createElement("p")
+      category.innerText = element.Categoty
+
+      let discription = document.createElement("p")
+      discription.innerText = element.Discription
+
+      let price = document.createElement("h3")
+      price.innerText = "₹" + element.Price
+
+      let span = document.createElement("span")
+      //span.innerText = ""
+
+      let btn3 = document.createElement("button");
+      btn3.innerText = "Remove"
+      btn3.addEventListener("click", function () {
+        deletedata(cartItems, index)
+        window.location.reload()
+      })
+
+      div.append(imgProd, title, category, discription, price, btn3, span)  //btn1, btn2,
+
+      document.querySelector("#cart-container").append(div);
+
+    })
+    function deletedata(arr, index) {
+      arr.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(arr));
+
+      display(arr);
+
+    }
+  }
+
+  //******************************************************************//
+  function display(cartItems) {
+
+
+document.querySelector("#cart-container").innerHTML = "";
+
+
+cartItems.forEach(function (element, index) {
+
+  let div = document.createElement("div");
+
+  let imgProd = document.createElement("img")
+  imgProd.setAttribute("src", element.Avtar)
+
+  let title = document.createElement("h2")
+  title.innerText = element.Title;
+
+  let category = document.createElement("p")
+  category.innerText = element.Category
+
+  let discription = document.createElement("p")
+  discription.innerText = element.Discription
+
+  let price = document.createElement("h3")
+  price.innerText = "₹" + element.Price
+
+  let span = document.createElement("span")
+  //span.innerText = ""
+
+  let btn3 = document.createElement("button");
+  btn3.innerText = "Remove"
+  btn3.addEventListener("click", function () {
+    deletedata(cartItems, index)
+    window.location.reload()
+  })
+
+  div.append(imgProd, title, category, discription, price, btn3, span)  //btn1, btn2,
+
+  document.querySelector("#cart-container").append(div);
+
+})
+function deletedata(arr, index) {
+  arr.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(arr));
+
+  display(arr);
+
+}
+}
+</script>
+
+</html>
