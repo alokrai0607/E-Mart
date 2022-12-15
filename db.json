@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img":"https://www.yoox.com/images/items/17/17148642KR_14_f.jpg?impolicy=crop&width=387&height=490",
+      "category":"underwear",
+      "title": "json-server",
+      "price": "$55",
+    "description":"gyfgsdiugdugsysd"
+    },
+    {
+      "id": 2,
+      "img":"https://www.yoox.com/images/items/17/17148642KR_14_f.jpg?impolicy=crop&width=387&height=490",
+      "category":"underwear",
+      "title": "json-server",
+      "price": "$55",
+    "description":"gyfgsdiugdugsysd"
+    },
+    {
+      "id": 3,
+      "img":"https://www.yoox.com/images/items/17/17148642KR_14_f.jpg?impolicy=crop&width=387&height=490",
+      "category":"underwear",
+      "title": "json-server",
+      "price": "$55",
+    "description":"gyfgsdiugdugsysd"
+    },
+    {
+      "id": 1,
+      "img":"https://www.yoox.com/images/items/17/17148642KR_14_f.jpg?impolicy=crop&width=387&height=490",
+      "category":"underwear",
+      "title": "json-server",
+      "price": "$55",
+    "description":"gyfgsdiugdugsysd"
+    },
+    {
+      "id": 1,
+      "img":"https://www.yoox.com/images/items/17/17148642KR_14_f.jpg?impolicy=crop&width=387&height=490",
+      "category":"underwear",
+      "title": "json-server",
+      "price": "$55",
+    "description":"gyfgsdiugdugsysd"
+    },
+    {
+      "id": 1,
+      "img":"https://www.yoox.com/images/items/17/17148642KR_14_f.jpg?impolicy=crop&width=387&height=490",
+      "category":"underwear",
+      "title": "json-server",
+      "price": "$55",
+    "description":"gyfgsdiugdugsysd"
+    }
+]
+}
