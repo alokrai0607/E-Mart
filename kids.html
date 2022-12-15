@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-mart Kids | Apparel online for babies, kids and teens</title>
+
     <style>
         *{
             text-align: center;
@@ -28,14 +29,80 @@
         #kids-bot-img img{
             width: 100%;
         }
-        #kids-middle-1{
+      .product{
+        position: relative;
+        overflow: hidden;
+        padding: 20px; 
+      }
+      .product-category{
+        padding: 0 10vw;
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+      .product-container{
+        padding: 0 10vw;
+        display: flex;
+        overflow-x: auto;
+
+        scroll-behavior: smooth;
+      }
+      .product-container::-webkit-scrollbar{
+        display: none;
+      }
+
+      .product-card{
+        flex: 0 0 auto;
+        width: 33%;
+        height: 80%;
+        margin-right:40px;
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        justify-content:space-between;
+      }
+      .product-image{
+        position: relative;
+        width: 100%;
+        
+      }
+      .pre-btn,.nxt-btn{
+        width: 60px;
+        border: none;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 9;
+      }
+      .pre-btn{
+        left: 0;
+      }
+      .nxt-btn{
+        right: 0;
+      }
+      .pre-btn svg,
+      .nxt-btn svg{
+        opacity: 0.3;
+      } 
+      .pre-btn:hover svg,
+      .nxt-btn:hover svg{
+        opacity:0.8;
+      } 
+      .product-image>h4{
+        padding-bottom: 10px;
+      }
+      #kids-middle-1{
             margin-bottom: 50px;
         }
-        #kids-middle-1 button{
+      #kids-middle-1 button{
             border: none;
             text-decoration: underline;
             background-color: white;
             font-size: 15px;
+            margin-bottom: 30px;
         }
         #kids-middle-1 button:hover{
             border: none;
@@ -43,15 +110,7 @@
             background-color: white;
             font-size: 15px;
             color: rgb(160, 163, 163);
-        }
-        #kids-middle-1>div{
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 40px;
-        }
-        #kids-middle-1>div>Div{
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-            width: 30%;
+            margin-bottom: 30px;
         }
         #kids-middle-2{
             margin-bottom: 50px;
@@ -68,15 +127,6 @@
             background-color: white;
             font-size: 15px;
             color: rgb(160, 163, 163);
-        }
-        #kids-middle-2>div{
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 40px;
-        }
-        #kids-middle-2>div>Div{
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-            width: 30%;
         }
         #kid-bot-1>div>div>p{
             margin: 30px 0px;
@@ -160,57 +210,181 @@
     </style>
 </head>
 <body>
-    <div id="kids-top-img">
+
+<div id="kids-top-img">
         <img src="https://www.yoox.com/images/yoox80/banners/6821_2_Christmas_Main_K.jpg?634485886869569819&impolicy=cropDefault&width=960&height=510" alt="">
-    </div>
-    <div id="kids-middle-1">
-        <h1>NEW ARRIVALS GIRLS</h1>
-        <button>VIEW ALL</button>
+</div>
+
+    <section class="product" id="kids-middle-1">
         <div>
-            <div>
-                <img src="https://www.yoox.com/images/items/10/10030637IF_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
-                <h3>VERSACE YOUNG</h3>
-                <p>Sweatshirt</p>
-                <h4>$230.00</h4>
+                <h1 class="product-category">NEW ARRIVALS GIRLS</h1>
+                <button>VIEW ALL</button>
+        </div>
+        <button class="pre-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M109.3 288L480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288z"/></svg></button>
+        <button class="nxt-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></button>
+        <div class="product-container">
+            <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.yoox.com/images/items/10/10030637IF_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                        <h3>VERSACE YOUNG</h3>
+                        <p>Sweatshirt</p>
+                        <h4>$ 230.00</h4>
+                    </div>
             </div>
-            <div>
-                <img src="https://www.yoox.com/images/items/17/17467566CM_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
-                <h3>VERSACE YOUNG</h3>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.yoox.com/images/items/17/17467566CM_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h3>VEJA</h3>
+                    <p>Sneakers</p>
+                    <h4>$ 121.00</h4>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.yoox.com/images/items/13/13920618AI_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h3>CHIARA FERRAGNI</h3>
+                    <p>Casual Pants</p>
+                    <h4>$ 91.00</h4>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.yoox.com/images/items/46/46890940TK_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h3>EMILIO PUCCI</h3>
+                    <p>Hair Accessory</p>
+                    <h4>$ 41.00</h4>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.yoox.com/images/items/54/54191471QV_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h3>ADIDAS ORIGNALS</h3>
+                    <p>Athletic Outfit</p>
+                    <h4>$ 70.00</h4>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.yoox.com/images/items/17/17463663NT_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h3>FALCOTTO</h3>
+                    <p>Sneakers</p>
+                    <h4>$ 82.00</h4>
+                </div>
+            </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.yoox.com/images/items/10/10030436BN_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                <h3>FENDI</h3>
+                <p>T-Shirt</p>
+                <h4>$ 247.00</h4>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.yoox.com/images/items/17/17470342SW_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                <h3>HOGAN</h3>
                 <p>Sneakers</p>
-                <h4>$150.00</h4>
+                <h4>$ 127.00</h4>
             </div>
-            <div>
-                <img src="https://www.yoox.com/images/items/13/13920618AI_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.yoox.com/images/items/10/10030078TU_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
                 <h3>VERSACE YOUNG</h3>
-                <p>Casual pants</p>
-                <h4>$91.00</h4>
+                <p>T-Shirt</p>
+                <h4>$ 143.00</h4>
             </div>
         </div>
     </div>
-    <div id="kids-middle-2">
-        <h1>NEW ARRIVALS BOYS</h1>
-        <button>VIEW ALL</button>
-        <div>
-            <div>
-                <img src="https://www.yoox.com/images/items/46/46889672OF_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
-                <h3>NEMESIS CAPS</h3>
-                <p>Hat</p>
-                <h4>$24.00</h4>
-            </div>
-            <div>
+</section>    
+        
+   
+     
+
+<section class="product" id="kids-middle-2">
+    <div>
+            <h1 class="product-category">NEW ARRIVALS BOYS</h1>
+            <button>VIEW ALL</button>
+    </div>
+    <button class="pre-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M109.3 288L480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288z"/></svg></button>
+    <button class="nxt-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></button>
+    <div class="product-container">
+        <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.yoox.com/images/items/46/46889672OF_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                    <h3>NAME IT</h3>
+                    <p>Hat</p>
+                    <h4>$ 24.00</h4>
+                </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
                 <img src="https://www.yoox.com/images/items/10/10030341AK_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
                 <h3>FENDI</h3>
                 <p>Sweatshirt</p>
-                <h4>$250.00</h4>
+                <h4>$ 227.00</h4>
             </div>
-            <div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
                 <img src="https://www.yoox.com/images/items/46/46892767CM_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
                 <h3>HEROS</h3>
                 <p>Hat</p>
-                <h4>$88.00</h4>
+                <h4>$ 98.00</h4>
             </div>
         </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.yoox.com/images/items/10/10032376PH_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                <h3>VISION OF SUPER</h3>
+                <p>Sweatshirt</p>
+                <h4>$ 88.00</h4>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.yoox.com/images/items/13/13963344RL_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                <h3>STELLA McCARTNEY KIDS</h3>
+                <p>Casual  Pants</p>
+                <h4>$ 62.00</h4>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.yoox.com/images/items/46/46892840WA_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                <h3>N21</h3>
+                <p>Hat</p>
+                <h4>$ 37.00</h4>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.yoox.com/images/items/17/17457689GT_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+                <h3>VANS</h3>
+                <p>Sneakers</p>
+                <h4>$ 48.00</h4>
+            </div>
+        </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="https://www.yoox.com/images/items/10/10031877JS_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+            <h3>VISION OF SUPER</h3>
+            <p>Sweatshirt</p>
+            <h4>$ 83.00</h4>
+        </div>
     </div>
+    <div class="product-card">
+        <div class="product-image">
+            <img src="https://www.yoox.com/images/items/46/46886506HE_14_f.jpg?impolicy=crop&width=306&height=390" alt="">
+            <h3>HEROS</h3>
+            <p>Hat</p>
+            <h4>$ 100.00</h4>
+        </div>
+    </div>
+</div>
+</section>   
+
+
     <div id="kid-bot-1">
         <h1>DESIGNERS</h1>
         <div>
@@ -282,10 +456,28 @@
             <button>SHOP BOYS</button>
         </div>
     </div>
-
-
     <div id="kids-bot-img">
         <img src="https://www.yoox.com/images/yoox80/banners/6821_1_Alpine_Bottom_K.jpg?634485886869569819&impolicy=cropDefault&width=960&height=510" alt="">
     </div>
+
+
+    <script>
+        const productContainer=[...document.querySelectorAll(".product-container")]
+        const nxtbtn= [...document.querySelectorAll(".nxt-btn")];
+        const prebtn= [...document.querySelectorAll(".pre-btn")];
+
+        productContainer.forEach((item,i)=>{
+            let containerDimensions= item.getBoundingClientRect();
+            let containerWidth = containerDimensions.width;
+
+            nxtbtn[i].addEventListener("click",()=>{
+                item.scrollLeft +=containerWidth;
+            })
+
+            prebtn[i].addEventListener("click",()=>{
+                item.scrollLeft -= containerWidth;
+            })
+        })
+    </script>
 </body>
 </html>
