@@ -141,8 +141,7 @@
     }
     #he {
       margin-left:00px;
-      height: 100px;
-      width: 90%;
+      width: 100%;
       color: black;
       background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
@@ -219,7 +218,7 @@
     // console.log("touch")
     let alok = document.querySelector("#filter").value;
     let show = arr.filter(function (element) {
-      return element.category == alok;
+      return element.Categoty == alok;
     })
     console.log(show)
     display(show);
