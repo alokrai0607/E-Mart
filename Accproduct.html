@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <style>
+    /* Write all necessery css here */
+    
+    #product-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+
+
+    }
+
+    #product-container>div {
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 10px;
+      perspective: 100px;
+    }
+
+    #product-container>div>img {
+      width: 90 px;
+    }
+
+    #product-container>div>button:hover {
+      background-color: rgb(110, 238, 110);
+      color: black;
+      font-size: 40px;
+      width: 300px;
+    }
+     #home:hover {
+      background-color: rgb(110, 238, 110);
+      color: black;
+      font-size: 80px;
+      width: 300px;
+    }
+    #cart:hover {
+      background-color: rgb(110, 238, 110);
+      color: black;
+      font-size: 80px;
+      width: 300px;
+    } 
+
+    #filter {
+      height: 100px;
+      width: 50%;
+      text-align: center;
+      font-size: 30px;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color:  #FF3CAC;
+      border-radius: 10px;
+      margin-top: 60px;
+    }
+    #filter:hover{
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    }
+
+    #product-container>div>button {
+      background-color: blueviolet;
+    }
+
+    #product-container>div>button {
+      background-color: #FF3CAC;
+      font-size: 30px;
+      width: 300px;
+      height: 50px;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+       /* background-color: whitesmoke; */
+       border-radius: 6px; 
+       border: #FF3CAC;
+      text-align: center; 
+    }
+
+    #product-container>div :nth-child(1) {
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+      height: 300px;
+      width: 300px;
+    }
+
+    .nav {
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+    }
+
+    body {
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+
+
+    }
+
+    .nav>h1 {
+      display: inline;
+      font-size: 100px;
+      color: black
+    }
+
+    #home {
+      margin-left: 0px;
+      padding: 15px 30px 15px 40px;
+      font-size: 400%;
+      color: black;
+      border: 3px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      background-color: whitesmoke;
+
+
+    }
+    #cart {
+      margin-left: 05px;
+      padding: 15px 40px 15px 40px;
+      font-size: 400%;
+      color: black;
+      border: 3px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      background-color: whitesmoke;
+
+
+    }
+    #he {
+      margin-left:00px;
+      height: 100px;
+      width: 90%;
+      color: black;
+      border: 3px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      background-color: whitesmoke;
+    }
+    body{
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+
+    }
+     #flex{
+        /* border: 2px solid black; */
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 45%;
+        height: 100px;
+        margin-left: 1150px;
+     }
+     #shose>button{
+      height: 100%;
+      width: 400px;
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      padding: 40px 40px;
+      font-size: 250%;
+     }
+     #Accesso>button{
+      height: 100%;
+      width: 400px;
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      padding: 40px 40px;
+      font-size: 250%;
+     }
+    
+
+    @media all and (min-width : 768px) and (max-width : 1024px) {
+
+      #product-container {
+        /* display: grid; */
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: auto; */
+        gap: 20px;
+      }
+    }
+
+    @media all and (min-width : 320px) and (max-width : 767px) {
+
+      #product-container {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: auto; */
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <h1 id="he">Pleasure to see you welcome in E-Mart.</h1>
+    <a id="home" href="index.html">Home</a>
+    <a id="cart" href="./cart.html">Cart</a>
+  </div>
+  <!-- Use this Select Tag for Filtering the Products  -->
+  <select onchange="filteritem()" id="filter">
+    <option value="">Filter by category</option>
+    <option value="Gloves">Gloves</option>
+    <option value="Hair accessories">Hair accessories</option>
+    <option value="Other accessories">Other accessories</option>
+    <option value="Planners & notebooks">Planners & notebooks</option>
+    <option value="Belts">Belts</option>
+    <option value="Sunglasses">Sunglasses</option>
+    <option value="Bags">Bags</option>
+    <option value="JEWELLERY">JEWELLERY</option>
+    <option value="Watches">Watches</option>
+   
+  </select>
+
+  <div id="flex">
+    <div id="shose" ><button><a href="./shoseproduct.html">Shoes</a></button></div>
+    <div id="Accesso"><button><a href="./clothesproduct.html">Clothes</a></button></div>
+  </div>
+  
+  <div id="product-container">
+    <!-- Here Append All the Products  -->
+  </div>
+</body>
+<script>
+  // Write all necessery JS here 
+
+
+  let url = "https://639c1fe142e3ad692727c7a2.mockapi.io/Accesso"
+  let arr = [];
+  async function getdata() {
+    try {
+      let res = await fetch(url);
+      let out = await res.json();
+      arr = [...out]
+      console.log(arr);
+      display(arr)
+    } catch (err) {
+      alert(err);
+    }
+  }
+  getdata()
+
+  //filter function here
+
+  function filteritem() {
+    // console.log("touch")
+    let alok = document.querySelector("#filter").value;
+    let show = arr.filter(function (element) {
+      return element.Category == alok;
+    })
+    console.log(show)
+    display(show);
+  }
+  function display(arr) {
+    let carts = JSON.parse(localStorage.getItem("cart")) || [];
+    document.querySelector("#product-container").innerHTML = "";
+    arr.forEach(function (element) {
+      let div = document.createElement("div");
+
+      let img = document.createElement("img")
+      img.setAttribute("src", element.Avtar)
+
+      let title = document.createElement("h1")
+      title.innerText = element.Title;
+
+      let cat = document.createElement("h2")
+      cat.innerText = element.Category;
+
+      let discription = document.createElement("p")
+      discription.innerText = element.Discription
+
+      let price = document.createElement("h2")
+      price.innerText = "₹" + element.Price
+
+      let btn = document.createElement("button");
+      btn.innerText = "Add To Cart"
+      btn.addEventListener("click", function () {
+        carts.push(element)
+        localStorage.setItem("cart", JSON.stringify(carts));
+
+      })
+      //   btn.setAttribute("id","hello");
+      div.append(img, title, cat, discription, price, btn);
+      document.querySelector("#product-container").append(div);
+    });
+  }
+</script>
+</html>

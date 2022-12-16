@@ -56,14 +56,15 @@
       width: 50%;
       text-align: center;
       font-size: 30px;
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-      background-color: whitesmoke;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color:  #FF3CAC;
       border-radius: 10px;
       margin-top: 60px;
     }
     #filter:hover{
-      background-color: rgb(110, 238, 110);
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     }
 
     #product-container>div>button {
@@ -75,8 +76,8 @@
       font-size: 30px;
       width: 300px;
       height: 50px;
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
        /* background-color: whitesmoke; */
        border-radius: 6px; 
        border: #FF3CAC;
@@ -84,17 +85,17 @@
     }
 
     #product-container>div :nth-child(1) {
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
       background-color: whitesmoke;
       height: 300px;
       width: 300px;
     }
 
     .nav {
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-      /* background-color: whitesmoke; */
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
     }
 
     body {
@@ -121,7 +122,7 @@
       text-decoration: none;
       background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-      /* background-color: whitesmoke; */
+      background-color: whitesmoke;
 
 
     }
@@ -134,8 +135,8 @@
       border-radius: 10px;
       text-decoration: none;
       background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
-      /* background-color: whitesmoke;  */
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      background-color: whitesmoke;
 
 
     }
@@ -144,9 +145,12 @@
       height: 100px;
       width: 90%;
       color: black;
+      border: 3px solid black;
+      border-radius: 10px;
+      text-decoration: none;
       background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-      /* background-color: whitesmoke; */
+      background-color: whitesmoke;
     }
     body{
       /* background-color: #FF3CAC;
@@ -154,6 +158,33 @@
       background-color: whitesmoke;
 
     }
+     #flex{
+        /* border: 2px solid black; */
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 45%;
+        height: 100px;
+        margin-left: 1150px;
+     }
+     #shose>button{
+      height: 100%;
+      width: 400px;
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      padding: 40px 40px;
+      font-size: 250%;
+     }
+     #Accesso>button{
+      height: 100%;
+      width: 400px;
+      background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      padding: 40px 40px;
+      font-size: 250%;
+     }
+    
+
     @media all and (min-width : 768px) and (max-width : 1024px) {
 
       #product-container {
@@ -178,18 +209,23 @@
 
 <body>
   <div class="nav">
-    <h1 id="he">Pleasure to see you welcome in E-Mart..</h1>
+    <h1 id="he">Pleasure to see you welcome in E-Mart.</h1>
     <a id="home" href="index.html">Home</a>
     <a id="cart" href="./cart.html">Cart</a>
   </div>
   <!-- Use this Select Tag for Filtering the Products  -->
   <select onchange="filteritem()" id="filter">
-    <option value="">Filter By Category</option>
-    <option value="Mens-FootWear">Mens FootWear</option>
-    <option value="Womens-FootWear">Womens FootWear</option>
+    <option value="">Filter by category</option>
+    <option value="Mens-FootWear">Mens-FootWear</option>
+    <option value="Womens-FootWear">Womens-FootWear</option>
     <option value="Kid-FootWear">Kid-FootWear</option>
-   
   </select>
+
+  <div id="flex">
+    <div id="Accesso"><button><a href="./Accproduct.html">Accessories</a></button></div>
+    <div id="Accesso"><button><a href="./clothesproduct.html">Clothes</a></button></div>
+  </div>
+  
   <div id="product-container">
     <!-- Here Append All the Products  -->
   </div>
@@ -219,7 +255,7 @@
     // console.log("touch")
     let alok = document.querySelector("#filter").value;
     let show = arr.filter(function (element) {
-      return element.category == alok;
+      return element.Categoty == alok;
     })
     console.log(show)
     display(show);
