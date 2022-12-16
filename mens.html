@@ -5,198 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
-    
-    <style>
-        
-        #first>img{
-           
-          display:flex;
-            width:90%;
-            margin:auto;
-            margin-top: 30px;
-            
-
-        }
-        #second{
-            display:flex;
-            width:90%;
-            margin:auto;
-            margin-top: 100px;
-
-        }
-        .second_1st{
-            width:32%;
-            margin-top:100px;
-            text-align: center;
-
-        } 
-        .second_2nd{
-            width:40%;
-            margin-bottom:200px;
-            text-align: center;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            padding-top: 30px;
-
-        }
-        .second_2nd>h4{
-            text-orientation: bold;
-        }
-        
-        .second_3rd{
-            width:35%;
-            margin-top:100px;
-            text-align: center;
-
-        }
-        #fourth{
-            display:flex;
-            width:100%;
-            margin:auto;
-            padding-top: 30px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-        .fourth_1st{
-            margin:20px;
-            width:30%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-
-
-        }
-        .fourth_1st>img{
-            width:80%;
-            margin-top:30px;
-            margin-left: 30px;
-        }
-        .fourth_2nd{
-            margin:20px;
-            width:30%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .fourth_3rd{
-            margin:20px;
-            width:30%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .fourth_3rd>img{
-            width:80%;
-            margin-top:30px;
-            margin-left:10px;
-        }
-        #sixth{
-           
-            display:flex;
-            width:70%;
-            margin:auto;
-
-        }
-        .sixth_1st>img{
-            width:100%
-        }
-        .sixth_2nd{
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            text-align: center;
-        }
-        #seventh{
-            width:90%;
-            margin:auto;
-            margin-top:30px
-        }
-        #seventh>img{
-            width:99%;
-        }
-         .product{
-        position: relative;
-         overflow: hidden; 
-        padding: 20px; 
-         margin:30px;
-        width:90%;
-        margin-bottom: 0px;
-        background-color:whitesmoke ;
-        
-      } 
-      .product-category{
-        padding: 0 10vw;
-        font-size: 30px;
-        font-weight: 500;
-        text-transform: capitalize;
-      }
-      .product-container{
-        padding: 0 10vw;
-        display: flex;
-        overflow-x: auto;
-        gap: 40px;
-        scroll-behavior: smooth;
-      }
-      .product-container::-webkit-scrollbar{
-        display: none;
-      }
-
-      .product-card{
-        flex: 0 0 auto;
-        width: 33%;
-        height: 100%;
-        margin-right:20px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        justify-content:space-between;
-      }
-      .product-image{
-        position: relative;
-        width: 100%;
-        text-align: center;
-        
-      }
-      .pre-btn,.nxt-btn{
-        width: 60px;
-        border: none;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        z-index: 9;
-      }
-      .pre-btn{
-        left: 0;
-      }
-      .nxt-btn{
-        right: 0;
-      }
-      .pre-btn svg,
-      .nxt-btn svg{
-        opacity: 0.3;
-      } 
-      .pre-btn:hover svg,
-      .nxt-btn:hover svg{
-        opacity:0.8;
-      } 
-      .product-image>h4{
-        padding-bottom: 10px;
-      }
-      .heading{
-        text-align: center;
-      }
-        
-        
-
-        
-
-      
-      
-    </style> 
+    <link rel="stylesheet" href="mens.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <nav id="nav">
+        <div id="nav_1">
+         <div id="nav_1_1">
+             <div>
+                 <select name="countries" id="select_btn">
+                     <option value="">United States</option>
+                     <option value="">India</option>
+                     <option value="">United Kingdom</option>
+                 </select>
+             </div>
+             <div>
+                 <a id="customer_btn" href="">CUSTOMER CARE</a>
+             </div>
+         </div>
+         <div id="nav_1_2">
+             <marquee behavior="scroll" direction="left" scrollamount="6">FREE STANDERED SHIPPING ON ORDERS OVER $100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WANT TO RECEIVE YOUR GIFTS IN TIME?&nbsp;|&nbsp;DISCOVER MORE</marquee>
+         </div>
+         <div id="nav_1_3">
+             <div>
+                 <i class="fa fa-pencil" aria-hidden="true"></i>
+                 <a href="register.html" id="register_btn">REGISTER</a>
+             </div>
+             <div>
+                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                 <a href="login.html" id="login_btn">LOGIN</a>
+             </div>
+         </div>
+        </div>
+        <hr>
+        <div id="nav_2">
+         <div id="nav_2_1">
+             <div id="nav_2_1_1">
+                 <a href="womens.html">WOMEN</a>
+                 <a href="mens.html">MEN</a>
+                 <a href="kids.html">KIDS</a>
+             </div>
+             <div  id="nav_2_1_2">
+                 <a href="index.html"><img width="90%" src="LOGO\E-Mart.gif" alt=""></a>
+             </div>
+             <div  id="nav_2_1_3">
+                 <div>
+                     <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                 </div>
+                 <div>
+                     <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                 </div>
+                 <div>
+                     <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                 </div>
+             </div>
+         </div>
+        </div>
+        <div id="nav_3">
+         <div id="nav_3_1">
+             <div><a href="clothesproduct.html">NEW ARRIVALS</a></div>
+             <div><a href="clothesproduct.html">DESIGNERS</a></div>
+             <div><a href="clothesproduct.html">CLOTHING</a></div>
+             <div><a href="shoseproduct.html">SHOES</a></div>
+             <div><a href="Accproduct.html">ACCESSORIES & BAGS</a></div>
+             <div><a href="Accproduct.html">8 BY YOOX</a></div>
+             <div><a href="Accproduct.html">YOOXYGEN</a></div>
+             <div><a href="shoseproduct.html">COLLABORATIONS</a></div>
+             <div><a href="Accproduct.html">BEST DEALS</a></div>
+             <div style="background-color: #CA336E;"><a href="" id="new1"><span style="margin-top: 10px;">GIFT GUIDE</span> </a></div>
+         </div>
+        
+        </div>
+ </nav>
     <div id ="first">
         
         
-<img src="https://www.yoox.com/images/yoox80/banners/6895_1_Genz_WM_Main.png?634485886869569819#width=1380&height=637"/>
+<img  href="clothesproduct.html" src="https://www.yoox.com/images/yoox80/banners/6895_1_Genz_WM_Main.png?634485886869569819#width=1380&height=637"/>
    
 
     </div>
@@ -206,44 +90,54 @@
             <div>
                 <h1>IT'S COLD OUTSIDE !</h1>
                 <p>Everything you need to stay warm</p>
-                <button>shop now</button>
+                <button><a href="clothesproduct.html"> SHOP NOW </a></button>
             </div>
         </div>
       
         <div class="second_2nd">
            
-            <h4>
-                DSQUARED2
+            <h4 >
+                <a href="clothesproduct.html"> DSQUARED2</a>
+                
             </h4>
             <h4>
-                ROBERTO CAVALLI
+                <a href="shoseproduct.html">ROBERTO CAVALLI</a>
+                
             </h4>
             <h4>
-                DOLCE & GABBANA
+                <a href="shoseproduct.html">  DOLCE & GABBANA</a>
+               
             </h4>
             <h4>
-                MAISON MARGIELA
+                <a href="clothesproduct.html"> MAISON MARGIELA </a>
+               
             </h4>
             <h4>
-                VERSACE
+                <a href="clothesproduct.html">  VERSACE </a>
+                
             </h4>
             <h4>
-                BALENCIAGA
+                <a href="Accproduct.html"> BALENCIAGA</a>
+                
             </h4>
             <h4>
-                PRADA
+                <a href="Accproduct.html">  PRADA</a>
+            
+                
             </h4>
             <h4>
-                GUCCI
+               <a href="shoseproduct.html">  GUCCI </a>
+               
             </h4>
             <h4>
-                CALVIN KLEIN
+                <a href="shoseproduct.html">  CALVIN KLEIN </a>
+              
             </h4>
             <h4>
-                JIL SANDER
+                <a href="clothesproduct.html">  VERSACE </a>
             </h4>
             <button>
-                viewAll
+                VIEW ALL
             </button>
             
 
@@ -254,7 +148,7 @@
 <div>
     <h1>WOW AT FIRST NIGHT !</h1>
     <p>A Special gifts for couples</p>
-    <button id="btn">shop now</button>
+    <button id="btn"><a href="clothesproduct.html"> SHOP NOW </a></button>
 </div>
 </div>
     </div>
@@ -354,16 +248,95 @@
                 <P>Be Our Own Boss</P>
             </div>
             <div class="fourth_3rd">
-                <img src="https://www.yoox.com/images/yoox80/banners/6825_6_Montblanc_M_Tris.jpg?634485886601286852#width=473&height=660"/>
+                <img src="https://www.yoox.com/images/yoox80/banners/6825_1_COS_Tris_M.png?634485886869569819#width=473&height=660"/>
                 <h1>
                     MONTBLANC
                 </h1>
                 <P>The New Gift Genration</P>
             </div>
         </div>
-        <div id="fifth">
-<h1>slidding window</h1>
+        <section class="product" id="kids-middle-1">
+            <div class="heading">
+                    <h1 class="product-category">BEST DEALS MENS</h1>
+                    <button>VIEW ALL</button>
+            </div>
+            <button class="pre-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M109.3 288L480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288z"/></svg></button>
+            <button class="nxt-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg></button>
+            <div class="product-container">
+                <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.yoox.com/images/items/16/16182949dp_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                            <h3>VERSACE YOUNG</h3>
+                            <p>Sweatshirt</p>
+                            <h4>$ 230.00</h4>
+                        </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.yoox.com/images/items/17/17422168ra_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                        <h3>VEJA</h3>
+                        <p>Sneakers</p>
+                        <h4>$ 121.00</h4>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.yoox.com/images/items/13/13936709hj_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                        <h3>CHIARA FERRAGNI</h3>
+                        <p>Casual Pants</p>
+                        <h4>$ 91.00</h4>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.yoox.com/images/items/45/45710222ct_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                        <h3>EMILIO PUCCI</h3>
+                        <p>BACK PACK</p>
+                        <h4>$ 41.00</h4>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.yoox.com/images/items/17/17434499pq_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                        <h3>ADIDAS ORIGNALS</h3>
+                        <p>Athletic Outfit</p>
+                        <h4>$ 70.00</h4>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.yoox.com/images/items/17/17445827nk_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                        <h3>FALCOTTO</h3>
+                        <p>Sneakers</p>
+                        <h4>$ 82.00</h4>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.yoox.com/images/items/12/12972770wc_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                        <h3>HOGAN</h3>
+                        <p>Sneakers</p>
+                        <h4>$ 127.00</h4>
+                    </div>
+                </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.yoox.com/images/items/16/16199770tn_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                    <h3>FENDI</h3>
+                    <p>T-Shirt</p>
+                    <h4>$ 247.00</h4>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.yoox.com/images/items/10/10009636uf_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center" alt="">
+                    <h3>VERSACE YOUNG</h3>
+                    <p>T-Shirt</p>
+                    <h4>$ 143.00</h4>
+                </div>
+            </div>
         </div>
+    </section>    
         <div id="sixth">
             <div class="sixth_1st">
                 <img src="https://www.yoox.com/images/yoox80/banners/6833_3_8byYoox_Special_WM.png?634485886601286852#width=930&height=660"/>
@@ -379,8 +352,89 @@
 
         </div>
         <div id="seventh">
-            <img src="https://www.yoox.com/images/yoox80/banners/6824_1_XmasGift_WM_Bottom.jpg?634485886601286852#width=1380&height=637"/>
+            <img src="https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/13.jpg?v=2"/>
         </div>
+        <footer id="footer">
+            <div id="footer_1">
+               <div id="footer_1_1">
+               <div id="footer_1_1_1">
+                <div class="foot">
+                    <h3>NEW TO YOOX</h3>
+                    <hr>
+                    <P>Shopping guide</P>
+                    <p>iPhone/iPaid/Android</p>
+                    <p>Browse all Designers</p>
+                    <p>Browse all Categories</p>
+                    <p>Gift delivery</p>
+                </div>
+                <div class="foot">
+                    <h3>HELP</h3>
+                    <hr>
+                    <P>Shipping times & costs</P>
+                    <p>Payments and web security</p>
+                    <p>Product quality</p>
+                    <p>Track your order</p>
+                    <p>Returns & refunds</p>
+                    <P>FAQs</P>
+                    <P>Size Guide</P>
+                </div>
+                <div id="footnew">
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+                    <h3>YOOX NEWS</h3>
+                    
+                    <P>Sign up for the newsletter and discover the latest arrivals and promotions</P>
+                    <input type="email" placeholder="INSERT YOUR E-MAIL ADDRESS">
+                    <div>
+                        <input type="checkbox">&nbsp; Woman
+                        <input type="checkbox">&nbsp; Man
+                    </div>
+                    <input type="checkbox">I consent to receive YOOX newsletters via email. For further information, please consult the Privacy Policy.
+                    
+                    <button>SIGN UP</button>
+    
+                </div>
+                <div class="foot">
+                    <h3>MYOOX</h3>
+                    <hr>
+                    <P>Login</P>
+                    <p>My Orders</p>
+                    <p>My Details</p>
+                    <p>Dream Box</p>
+                    <p>Premiere</p>
+                   
+                </div>
+                <div class="foot">
+                    <h3>ABOUT US</h3>
+                    <hr>
+                    <P>Company Info</P>
+                    <p>Press</p>
+                    <p>Affiliation</p>
+                    <p>Careers</p>
+                 
+                </div>
+               </div>
+               </div>
+               <div id="footer_1_2">
+                <div id="footer_1_2_1">
+                    <p>CONNECT WITH US</p>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    
+                </div>
+                <div id="footer_1_2_2">
+                    <a href=""><i class="fa fa-tablet" aria-hidden="true"></i></a>
+                    <p>DOWNLOAD THE APP FOR iOS / ANDROID</p>
+                </div>
+               </div>
+            </div> 
+            <div id="footer_2">
+                 <h4>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</h4>
+                 <p>LEGAL AREA / PRIVACY POLICY</p>
+            </div>
+        </footer>
 
     
     
