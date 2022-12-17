@@ -246,7 +246,7 @@
             width: 100%;
             height: 50px;
         }
-        #ragistration_page>#fb{
+        #ragistration_page #fb{
             background-color: #3C55A2;
             border-color: #3C55A2;
         }
@@ -360,9 +360,10 @@
         </div>
         <div id="ragistration_page" >
               <p>REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</p>
-              <button id="fb"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-              <button id="google"><i class="fa fa-google" aria-hidden="true"></i></button>
-              <p>OR WITH TOUR EMAIL</p>
+              <a href="https://www.facebook.com/"><button id="fb"><i class="fa fa-facebook" aria-hidden="true"></i></button></a>
+              <a href="https://www.google.com/"><button id="google"><i class="fa fa-google" aria-hidden="true"></i></button></a>
+             
+              <p>OR WITH YOUR EMAIL</p>
               <input id="name" class="input1" type="text" placeholder="FIRST NAME*">
               <input id="lastname" class="input1" type="text" placeholder="LAST NAME*">
               <input id="email" class="input1" type="email" placeholder="E-MAIL*">
@@ -424,7 +425,7 @@
             birthdate
         }
         if(name=="" || lastname=="" || email=="" || contactnumber=="" || password=="" || birthdate==""){
-            alert("PLAESE FILL ALL THE DETAILS")
+            alert("PLEASE FILL ALL THE DETAILS")
         }else{
             arr.push(obj)
             localStorage.setItem("USERINFO",JSON.stringify(arr))
