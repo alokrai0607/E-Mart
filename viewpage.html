@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#nav{
+height: 160px;
+width: 100%;
+border: 1px solid white;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+#nav_1{
+height: 20%;
+width: 100%;
+border: 1px solid white;
+display: flex;
+}
+#nav_2{
+height: 50%;
+width: 100%;
+border: 1px solid white;
+
+}
+#nav_3{
+height: 29%;
+width: 100%;
+border: 1px solid white;
+background-color: black;
+display: flex;
+align-items: center;
+}
+#nav_1_1{
+height: 100%;
+width: 33.3%;
+border: 1px solid white;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+#nav_1_2{
+height: 100%;
+width: 33.3%;
+border: 1px solid white;
+}
+#nav_1_3{
+height: 100%;
+width: 33%;
+border: 1px solid white;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+#select_btn{
+width: auto;
+border: 1px solid white;
+text-decoration: underline;
+font-size: 13px;
+font-weight: lighter;
+}
+#select_btn:hover{
+text-decoration: none;
+font-weight: bolder;
+}
+#customer_btn{
+font-weight: lighter;
+
+font-size: 13px;
+color: black;
+}
+#customer_btn:hover{
+text-decoration: none;
+font-weight: bolder;
+}
+#nav_1_3 div{
+font-size: 13px;
+font-weight: lighter;
+
+}
+#register_btn:hover{
+text-decoration: none;
+font-weight: bolder;
+}
+#login_btn:hover{
+text-decoration: none;
+font-weight: bolder;
+}
+#nav_1_3 a{
+color: black;
+}
+#nav_1_3 a:hover{
+font-weight: bolder;
+}
+#nav_1_2{
+display: flex;
+align-items: center;
+font-size: 13px;
+font-weight: lighter;
+color: black;
+}
+#nav_2_1{
+height: 100%;
+width: 80%;
+border: 1px solid white;
+margin: auto;
+display: flex;
+}
+#nav_2_1_1{
+height: 100%;
+width: 33%;
+border: 1px solid white;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+#nav_2_1_2{
+height: 100%;
+width: 33%;
+border: 1px solid white;
+display: flex;
+justify-content: center;
+}
+#nav_2_1_3{
+height: 100%;
+width: 33%;
+border: 1px solid white;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+#nav_2_1_1 a{
+font-weight: lighter;
+color: black;
+font-size: 13px;
+text-decoration: none;
+}
+#nav_2_1_2 a{
+display: flex;
+justify-content: center;
+}
+#nav_3_1{
+height: 95%;
+width: 80%;
+border: 1px solid black;
+margin: auto;
+display: flex;
+justify-content: space-evenly;
+background-color: black;
+align-items: center;
+}
+#nav_3_1 div{
+font-weight: lighter;
+color: black;
+font-size: 13px;
+text-decoration: none;
+
+}
+#nav_3_1 a{
+color: white;
+text-decoration: none;
+
+}
+#nav_3_1 a:hover{
+color: rgb(117, 113, 113);
+}
+#nav_3_1 div{
+height: auto;
+}
+#nav_2_1_1 a:hover{
+text-decoration: underline;
+font-weight: bolder;
+}
+#new1{
+padding: 15px;
+
+}
+/*--------------------footer-------------*/
+#footer{
+height: 600px;
+width: 100%;
+border: 1px solid #F3F3F3;
+}
+#footer_1{
+height: 75%;
+width: 100%;
+border: 1px solid #F3F3F3;
+background-color: #F3F3F3;
+}
+#footer_2{
+height: 25%;
+width: 100%;
+border: 1px solid #F3F3F3;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+color: white;
+background-color: black;
+font-size: 12px;
+} 
+#footer_1_1{
+height: 85%;
+width: 100%;
+border: 1px solid #F3F3F3;
+}
+#footer_1_2{
+height: 15%;
+width: 100%;
+border: 1px solid #F3F3F3;
+} 
+#footer_1_1_1{
+height: 90%;
+width: 80%;
+border: 1px solid #F3F3F3;
+margin: auto;
+display: flex;
+margin-top: 15px;
+}
+.foot{
+height: 100%;
+width: 17%;
+border: 1px solid #F3F3F3;
+text-align: center;
+
+}
+#footnew{
+height: 100%;
+width: 32%;
+border: 1px solid #F3F3F3;
+text-align: center;
+background-color: white;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.foot *{
+margin-top: 10px;
+}
+#footnew *{
+margin-top: 10px;
+}
+#footnew input{
+padding: 8px;
+}
+#footnew button{
+padding: 10px;
+width: 200px;
+background-color: black;
+color: white;
+}
+#footnew button:hover{
+color: rgb(173, 166, 166);
+}
+#footer_1_2{
+display: flex;
+}
+#footer_1_2 div{
+height: 97%;
+width: 50%;
+border: 1px solid #F3F3F3;
+}
+#footer_1_2_1{
+display: flex;
+margin-left: 0px;
+align-items: center;
+justify-content: space-evenly;
+}
+#footer_1_2_2{
+display: flex;
+margin-left: 0px;
+align-items: center;
+justify-content: space-evenly;
+}
+
+
+
+
+
+        /* (A) SEARCH BOX */
+#the-filter {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+ 
+/* (B) LIST */
+#the-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#the-list li {
+  padding: 10px;
+  border-bottom: 2px rgba(12, 191, 235, 0.25);
+}
+#the-list li:hover { background: rgb(14, 219, 223); }
+#the-list li.hide { display: none; }
+
+h1{
+  text-align: center;
+}
+#the-filter{
+  text-decoration: none;
+}
+#mgng{
+  font-size: 40px;
+}
+#w1{
+  width:40%;
+margin: auto;
+}
+#alpha{
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
+
+}
+#alpha>p:hover{
+  color: silver;
+}
+#big{
+  font-size: 50px;
+}
+#discover{
+  width: 40%;
+  margin: auto;
+}
+#w2{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 0.1in;
+}
+#w1_0{
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 30px;
+}
+#hov>p:hover{
+  color: silver;
+}
+a{
+  color: black;
+  text-decoration: none;
+}#w1_0:hover{
+  color: silver;
+}
+
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <div id="nav_1">
+         <div id="nav_1_1">
+             <div>
+                 <select name="countries" id="select_btn">
+                     <option value="">United States</option>
+                     <option value="">India</option>
+                     <option value="">United Kingdom</option>
+                 </select>
+             </div>
+             <div>
+                 <a id="customer_btn" href="">CUSTOMER CARE</a>
+             </div>
+         </div>
+         <div id="nav_1_2">
+             <marquee behavior="scroll" direction="left" scrollamount="6">FREE STANDERED SHIPPING ON ORDERS OVER $100 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WANT TO RECEIVE YOUR GIFTS IN TIME?&nbsp;|&nbsp;DISCOVER MORE</marquee>
+         </div>
+         <div id="nav_1_3">
+             <div>
+                 <i class="fa fa-pencil" aria-hidden="true"></i>
+                 <a href="register.html" id="register_btn">REGISTER</a>
+             </div>
+             <div>
+                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                 <a href="login.html" id="login_btn">LOGIN</a>
+             </div>
+         </div>
+        </div>
+        <hr>
+        <div id="nav_2">
+         <div id="nav_2_1">
+             <div id="nav_2_1_1">
+                 <a href="womens.html">WOMEN</a>
+                 <a href="mens.html">MEN</a>
+                 <a href="kids.html">KIDS</a>
+             </div>
+             <div  id="nav_2_1_2">
+                 <a href="index.html"><img width="90%" src="LOGO\E-Mart.gif" alt=""></a>
+             </div>
+             <div  id="nav_2_1_3">
+                 <div>
+                     <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                 </div>
+                 <div>
+                     <a href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                 </div>
+                 <div>
+                     <a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                 </div>
+             </div>
+         </div>
+        </div>
+        <div id="nav_3">
+         <div id="nav_3_1">
+             <div><a href="clothesproduct.html">NEW ARRIVALS</a></div>
+             <div><a href="clothesproduct.html">DESIGNERS</a></div>
+             <div><a href="clothesproduct.html">CLOTHING</a></div>
+             <div><a href="shoseproduct.html">SHOES</a></div>
+             <div><a href="Accproduct.html">ACCESSORIES & BAGS</a></div>
+             <div><a href="Accproduct.html">8 BY YOOX</a></div>
+             <div><a href="Accproduct.html">YOOXYGEN</a></div>
+             <div><a href="shoseproduct.html">COLLABORATIONS</a></div>
+             <div><a href="Accproduct.html">BEST DEALS</a></div>
+             <div style="background-color: #CA336E;"><a href="" id="new1"><span style="margin-top: 10px;">GIFT GUIDE</span> </a></div>
+         </div>
+        
+        </div>
+ </nav>
+<div>
+    <p id="w1_0">ALL DESIGNERS | WOMEN</p>
+<hr>
+<p id="w1_0">TOP DESIGNERS</p>
+<p id="w1_0">Clothing</p>
+<div id="w2">
+  <div>
+    <img src="https://media.yoox.biz/yoox80/banners/5634_5_Clothing_W_Designers.jpg?634485886601286852" alt="">
+  </div>
+  <div id="hov">
+    <p>DOLCE & GABBANA</p>
+    <p>MAISON MARGIELA</p>
+    <p>MARNI</p>
+    <p>BALENCIAGA</p>
+    <p>RICK OWENS</p>
+    <p>PRADA</p>
+    <p>VERSACE</p>
+    <p>GUCCI</p>
+    <p>VALENTINO</p>
+    <p>DIOR</p>
+    <p>8 by YOOX</p>
+    <p>OFF-WHITE™</p>
+    <p>MOSCHINO</p>
+    <p>ROBERTO CAVALLI</p>
+    <p>DSQUARED2</p>
+    <p>MARNI</p>
+  </div>
+  <div id="hov">
+    <p>MICHAEL KORS</p>                       
+    <p>STELLA MCCARTNEY</p>
+    <p>TOMMY HILFIGER</p>
+    <p>GCDS</p>
+    <p>MSGM</p>
+    <p>MISSONI</p>
+    <p>GIORGIO ARMANI</p>
+    <p>BRUNELLO CUCINELLI</p>
+    <p>MIU MIU</p>
+    <p>EMILIO PUCCI</p>
+    <p>CELINE</p>
+    <p>LOEWE</p>
+    <p>DRIES VAN NOTEN</p>
+    <p>JIL SANDER</p>
+    <p>CALVIN KLEIN</p>
+    <p>CHLOÉ</p>
+  </div>
+</div>
+<p id="w1_0">Shoes</p>
+<div id="w2">
+ 
+  <div id="hov">
+    <p>DOLCE & GABBANA</p>
+    <p>MAISON MARGIELA</p>
+    <p>MARNI</p>
+    <p>BALENCIAGA</p>
+    <p>RICK OWENS</p>
+    <p>PRADA</p>
+    <p>VERSACE</p>
+    <p>GUCCI</p>
+    <p>VALENTINO</p>
+    <p>DIOR</p>
+    <p>8 by YOOX</p>
+    <p>OFF-WHITE™</p>
+    <p>MOSCHINO</p>
+    <p>ROBERTO CAVALLI</p>
+    <p>DSQUARED2</p>
+    <p>CALVIN KLEIN</p>
+  </div>
+  <div id="hov">
+    <p> MARNI</p>                       
+    <p>STELLA MCCARTNEY</p>
+    <p>TOMMY HILFIGER</p>
+    <p>GCDS</p>
+    <p>MSGM</p>
+    <p>MISSONI</p>
+    <p>GIORGIO ARMANI</p>
+    <p>BRUNELLO CUCINELLI</p>
+    <p>MIU MIU</p>
+    <p>EMILIO PUCCI</p>
+    <p>CELINE</p>
+    <p>LOEWE</p>
+    <p>DRIES VAN NOTEN</p>
+    <p>JIL SANDER</p>
+    <p>CALVIN KLEIN</p>
+    <p>CHLOÉ</p>
+  </div>
+  <div>
+    <img src="https://media.yoox.biz/yoox80/banners/5634_5_Shoes_W_Designers.jpg?634485886601286852" alt="">
+  </div>
+</div>
+
+<p id="w1_0">Accessories & Bags</p>
+<div id="w2">
+  <div>
+    <img src="https://media.yoox.biz/yoox80/banners/5634_5_Bags_W_Designers.jpg?634485886601286852" alt="">
+  </div>
+  <div id="hov">
+    <p>DOLCE & GABBANA</p>
+    <p>MAISON MARGIELA</p>
+    <p>MARNI</p>
+    <p>BALENCIAGA</p>
+    <p>RICK OWENS</p>
+    <p>PRADA</p>
+    <p>VERSACE</p>
+    <p>GUCCI</p>
+    <p>VALENTINO</p>
+    <p>DIOR</p>
+    <p>8 by YOOX</p>
+    <p>OFF-WHITE™</p>
+    <p>MOSCHINO</p>
+    <p>ROBERTO CAVALLI</p>
+    <p>DSQUARED2</p>
+    <p>N°21</p>
+  </div>
+  <div id="hov">
+    <p>MICHAEL KORS</p>                       
+    <p>STELLA MCCARTNEY</p>
+    <p>TOMMY HILFIGER</p>
+    <p>GCDS</p>
+    <p>MSGM</p>
+    <p>MISSONI</p>
+    <p>GIORGIO ARMANI</p>
+    <p>BRUNELLO CUCINELLI</p>
+    <p>MIU MIU</p>
+    <p>EMILIO PUCCI</p>
+    <p>CELINE</p>
+    <p>LOEWE</p>
+    <p>DRIES VAN NOTEN</p>
+    <p>JIL SANDER</p>
+    <p>CALVIN KLEIN</p>
+    <p>CHLOÉ</p>
+  </div>
+</div>
+  <hr>
+  <h1>Women | Designers A - Z</h1>
+  
+    <!-- (A) SEARCH BOX -->
+    <div id="w1">
+<input type="text" id="the-filter" placeholder=" SEARCH  ALL  DESINERS">
+<div id="alpha">
+  <p>A</p>
+  <p>B</p>
+  <p>C</p>
+  <p>D</p>
+  <p>E</p>
+  <p>F</p>
+  <p>G</p>
+  <p>H</p>
+  <p>I</p>
+  <p>J</p>
+  <p>K</p>
+  <p>L</p>
+  <p>M</p>
+  <p>N</p>
+  <p>O</p>
+  <p>P</p>
+  <p>Q</p>
+  <p>R</p>
+  <p>S</p>
+  <p>T</p>
+  <p>U</p>
+  <p>V</p>
+  <p>W</p>
+  <p>X</p>
+  <p>Y</p>
+  <p>Z</p>
+</div>
+</div>
+<!-- (B) LIST OF ITEMS -->
+<hr>
+<div id="discover">
+  <a href="">
+  <ul id="the-list">
+    <li id="big">A</li>
+    <li>ALEVÍ MILANO</li>
+    <li>ALEX DE PASE</li>
+    <li>ALEX MILL</li>
+    <li>ALEX MULLINS</li>
+    <li>ALEX PERRY</li>
+    <li>ALEX VIDAL</li>
+    <li>ALEXACHUNG</li>
+    <li>ALEXANDER</li>
+    <li>ALEXANDER HOTTO</li>
+    <li>ALEXANDER MCQUEEN</li>
+  
+  <li id="big">B</li>
+  
+  <li>BEN-AMUN</li>
+  <li>BENEVIERRE</li>
+  <li>BENVADO</li>
+  <li>BEPOPSY</li>
+  <li>BEPOSITIVE</li>
+  <li>BERNA</li>
+  <li>BERNADETTE</li>
+  <li>BERWICH</li>
+  <li>BESFXXK</li>
+  <li>BEST COMPANY</li>
+  
+  <li id="big">C</li>
+  
+    <li>CATWALK</li>
+    <li>  CATWALK JUNKIE.</li>
+    <li>CAVALLI CLASS</li>
+    <li>CAVALLINI</li>
+    <li>CB CECILIA BRINGHELI</li>
+    <li>CB FUSION</li>
+    <li>CECCONELLO</li>
+    <li>CECIL</li>
+    <li>CECILE®</li>
+    <li>CÉCILE</li>
+   
+   <li id="big">D</li>
+  
+   <li>DELFINA</li>
+   <li>DELFINA DELETTREZ</li>
+   <li>DELLA CIANA</li>
+   <li>DELLA PAOLINI</li>
+   <li>DELPOZO</li>
+   <li>DEMNA GVASALIA</li>
+   <li>DENHAM</li>
+   <li>DENIM & SUPPLY RALPH LAUREN</li>
+   <li>DENIMIST</li>
+   <li>DENISE BONAPACE</li>
+    
+   <li id="big">E</li>
+  
+   <li> ELINA LINARDAKI</li>
+   <li>ELISA CAVALETTI BY DANIELA DALLAVALLE</li>
+   <li>ELISA CONTE®</li>
+   <li>ELISA FANTI</li>
+   <li>ELISA LANCI</li>
+   <li>ELISA SARTORE</li>
+   <li>ELISABETH B</li>
+   <li>ELISABETH WEINSTOCK</li>
+   <li>ELISABETTA FRANCHI</li>
+   
+   <li id="big">F</li>
+  <li>FIAT 500</li>
+  <li>FIFTY FOUR</li>
+  <li>FIGUE</li>
+  <li>FIGURE DECORATIVE</li>
+  <li>FIGURELLI</li>
+  <li>FIL NOIR</li>
+  <li>FILA</li>
+  <li>FILA BY WOOD WOOD</li>
+  <li>FILA HERITAGE</li>
+  <li>FILBEC</li>
+  
+  <li id="big">G</li>
+  <li>GLAM BY BABYLON</li>
+  <li>GLAM CRISTINAEFFE</li>
+  <li>GLAM SHOES</li>
+  <li>GLAMOROUS CARE</li>
+  <li>GLAMOUR</li>
+  <li>GLAMOUR GIRL</li>
+  <li>GLAMOURETTE</li>
+  <li>GLIMMED</li>
+  <li>GLANSHIRT</li>
+  
+  <li id="big">H</li>
+  <li>HAIGHT</li>
+  <li>HAIKURE</li>
+  <li>HAILY*S</li>
+  <li>HAILYS</li>
+  
+  <li id="big">I</li>
+  <li>IANUA</li>
+  <li>IANUÀ</li>
+  <li>IBANA</li>
+  <li>IBELIV</li>
+  <li>IBRIGU</li>
+  
+  <li id="big">J</li>
+  
+  <li>JADICTED</li>
+  <li>JAGGY</li>
+  <li>JAHNKOY</li>
+  <li>JAIL'S</li>
+  <li>JAKKE</li>
+  
+  <li id="big">K</li>
+  
+  <li>KAIN</li>
+  <li>KALDA</li>
+  <li>KALITA</li>
+  <li>KALLISTÈ</li>
+  <li>KAMSA</li>
+  <li>KANGHYUK</li>
+  <li>KANGOL</li>
+  
+  <li id="big">L</li>
+  
+  <li>LANCEL</li>
+  <li>LANEROSSI</li>
+  <li>LANEUS</li>
+  <li>LANNOO</li>
+  <li>LANSTON</li>
+  
+  <li id="big">M</li>
+  
+  <li>MADEWELL</li>
+  <li>MADEWORN</li>
+  <li>MADRAS</li>
+  <li>MADRILENA</li>
+  <li>MAEMI</li>
+  <li>MAESTA</li>
+  
+  <li id="big">N</li>
+  
+  <li>NAGNATA</li>
+  <li>NAGUISA</li>
+  <li>NAHMIAS</li>
+  <li>NAÏCE</li>
+  <li>NAIS</li>
+  
+  <li id="big">O</li>
+  
+  <li>OAKLEY</li>
+  <li>OAKS</li>
+  <li>OAKWOOD</li>
+  <li>OAMC</li>
+  <li>OAS</li>
+  <li>OASI</li>
+  <li>OATS</li>
+  
+  <li id="big">P</li>
+  
+  <li>PREZIOSA</li>
+  <li>PREZIOSO</li>
+  <li>PRIMABASE</li>
+  <li>PRIMADONNA</li>
+  <li>PRIMEBOOTS</li>
+  
+  <li id="big">Q</li>
+  
+  <li>QUATTROCCHI</li>
+  <li>QUETE</li>
+  <li>QUEGUAPA</li>
+  <li>QUIRA</li>
+  
+  <li id="big">R</li>
+  
+  <li>RAGDOLL</li>
+  <li>RAGNO</li>
+  <li>RAGWEAR</li>
+  <li>RAILS</li>
+  <li>RAINS</li>
+  
+  <li id="big">S</li>
+  
+  <li>STARLET</li>
+  <li>START UP</li>
+  <li>STARTER</li>
+  
+  <li id="big">T</li>
+  
+  <li>THOM BROWNE</li>
+  <li>THOM KROM</li>
+  <li>THOMAS BRAND</li>
+  <li>THOMAS LEE</li>
+  <li>THOMAS NEUMAN</li>
+  
+  <li id="big">U</li>
+  
+  <li>UNDERCOVER</li>
+  <li>UNDERPROTECTION</li>
+  <li>UNFAMOUS</li>
+  <li>UNIC</li>
+  
+  <li id="big">V</li>
+  
+  <li>VISII</li>
+  <li>VISONE</li>
+  <li>VISVIM</li>
+  <li>VIVIAN</li>
+  <li>VIVIEN</li>
+  <li>VIVETTA</li>
+  
+  <li id="big">W</li>
+  
+  <li>WARM</li>
+  <li>WARRIOR</li>
+  
+  <li id="big">X</li>
+  
+  <li>X ME</li>
+  <li>X'S MILANO</li>
+  <li>XACUS</li>
+  <li>XAGON</li>
+  <li>X&B XAVEM</li>
+  
+  <li id="big">Y</li>
+  
+  <li>YASMINE ESLAMI</li>
+  <li>YOGI</li>
+  <li>Y'S ASPESI</li>
+  <li>Y/OSEMITE</li>
+  
+  <li id="big">Z</li>
+  <li>ZAC POSEN</li>
+  <li>ZAHJR</li>
+  <li>ZANELLATO</li>
+  <li>ZADIG&VOLTAIRE</li>
+  
+  
+    
+  
+  <!-- start -->
+    
+  </ul>
+</a>
+</div>
+
+</div>
+
+
+
+<footer id="footer">
+    <div id="footer_1">
+       <div id="footer_1_1">
+       <div id="footer_1_1_1">
+        <div class="foot">
+            <h3>NEW TO YOOX</h3>
+            <hr>
+            <P>Shopping guide</P>
+            <p>iPhone/iPaid/Android</p>
+            <p>Browse all Designers</p>
+            <p>Browse all Categories</p>
+            <p>Gift delivery</p>
+        </div>
+        <div class="foot">
+            <h3>HELP</h3>
+            <hr>
+            <P>Shipping times & costs</P>
+            <p>Payments and web security</p>
+            <p>Product quality</p>
+            <p>Track your order</p>
+            <p>Returns & refunds</p>
+            <P>FAQs</P>
+            <P>Size Guide</P>
+        </div>
+        <div id="footnew">
+            <p><i class="fa fa-envelope-o" aria-hidden="true"></i></p>
+            <h3>YOOX NEWS</h3>
+            
+            <P>Sign up for the newsletter and discover the latest arrivals and promotions</P>
+            <input type="email" placeholder="INSERT YOUR E-MAIL ADDRESS">
+            <div>
+                <input type="checkbox">&nbsp; Woman
+                <input type="checkbox">&nbsp; Man
+            </div>
+            <input type="checkbox">I consent to receive YOOX newsletters via email. For further information, please consult the Privacy Policy.
+            
+            <button>SIGN UP</button>
+
+        </div>
+        <div class="foot">
+            <h3>MYOOX</h3>
+            <hr>
+            <P>Login</P>
+            <p>My Orders</p>
+            <p>My Details</p>
+            <p>Dream Box</p>
+            <p>Premiere</p>
+           
+        </div>
+        <div class="foot">
+            <h3>ABOUT US</h3>
+            <hr>
+            <P>Company Info</P>
+            <p>Press</p>
+            <p>Affiliation</p>
+            <p>Careers</p>
+         
+        </div>
+       </div>
+       </div>
+       <div id="footer_1_2">
+        <div id="footer_1_2_1">
+            <p>CONNECT WITH US</p>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            
+        </div>
+        <div id="footer_1_2_2">
+            <a href=""><i class="fa fa-tablet" aria-hidden="true"></i></a>
+            <p>DOWNLOAD THE APP FOR iOS / ANDROID</p>
+        </div>
+       </div>
+    </div> 
+    <div id="footer_2">
+         <h4>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</h4>
+         <p>LEGAL AREA / PRIVACY POLICY</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+<script>
+    window.addEventListener("load", () => {
+  // (A) GET HTML ELEMENTS
+  var filter = document.getElementById("the-filter"), // search box
+      list = document.querySelectorAll("#the-list li"); // all list items
+ 
+  // (B) ATTACH KEY UP LISTENER TO SEARCH BOX
+  filter.onkeyup = () => {
+    // (B1) GET CURRENT SEARCH TERM
+    let search = filter.value.toLowerCase();
+ 
+    // (B2) LOOP THROUGH LIST ITEMS - ONLY SHOW THOSE THAT MATCH SEARCH
+    for (let i of list) {
+      let item = i.innerHTML.toLowerCase();
+      if (item.indexOf(search) == -1) { i.classList.add("hide"); }
+      else { i.classList.remove("hide"); }
+    }
+  };
+});
+</script>
