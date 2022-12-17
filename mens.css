@@ -7,6 +7,12 @@
       
 
   }
+  /* #first{
+    width:100%;
+    margin-left: 50px;
+    margin-top:50px;
+    
+  } */
   #second{
       display:flex;
       width:90%;
@@ -443,4 +449,8 @@ display: flex;
 margin-left: 0px;
 align-items: center;
 justify-content: space-evenly;
+}
+a{
+  color:black;
+  text-decoration: none;
 }
