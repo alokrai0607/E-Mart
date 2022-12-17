@@ -252,7 +252,7 @@
             height: 50px;
         }
 
-        #ragistration_page>#fb {
+        #ragistration_page #fb {
             background-color: #3C55A2;
             border-color: #3C55A2;
         }
@@ -276,7 +276,7 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
 
-        #regi_btn {
+        #login {
             background-color: black;
             color: white;
         }
@@ -372,15 +372,16 @@
         </div>
         <div id="ragistration_page">
             <p>LOGIN WITH YOUR SOCIAL MEDIA ACCOUNT</p>
-            <button id="fb"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-            <button id="google"><i class="fa fa-google" aria-hidden="true"></i></button>
-            <p>OR WITH TOUR EMAIL</p>
+            <a href="https://www.facebook.com/"><button id="fb"><i class="fa fa-facebook" aria-hidden="true"></i></button></a>
+            <a href="https://www.google.com/"><button id="google"><i class="fa fa-google" aria-hidden="true"></i></button></a>
+           
+            <p>OR WITH YOUR EMAIL</p>
 
-            <input id="email" class="input1" type="email" placeholder="E-MAIL*">
-            <input id="password" class="input1" type="password" placeholder="PASSWORD*">
+            <input id="email1" class="input1" type="email" placeholder="E-MAIL*">
+            <input id="password1" class="input1" type="password" placeholder="PASSWORD*">
 
 
-            <button id="login_btn">LOGIN</button>
+            <button id="login">LOGIN</button>
         </div>
         <div id="footer">
             <h4>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS
@@ -388,31 +389,42 @@
             <p>LEGAL AREA / PRIVACY POLICY</p>
         </div>
     </div>
+
 </body>
 
 </html>
 <script>
-    let localdata=JSON.parse(localStorage.getItem("USERINFO"));
-    let email=document.getElementById("email").value
-    let password=document.getElementById("password").value
-   let login_btn=document.getElementById("login_btn")
 
-   login_btn.addEventListener("click",newfun)
-   let flag=0
-    localdata.forEach(element => {
-        if(email==element.email && password==element.password){
-               flag=1
-               return
-        }else{
-            flag=0
+    let lmsdata = JSON.parse(localStorage.getItem("USERINFO"))
+    console.log(lmsdata[0].name)
+
+    document.querySelector("#login").addEventListener("click", newfun)
+    function newfun(e) {
+        e.preventDefault();
+
+        let email = document.querySelector("#email1").value
+        let password = document.querySelector("#password1").value
+        let flex = 0
+        lmsdata.forEach(element => {
+            if (email == element.email && password == element.password) {
+                flex = 1
+                return
+
+
+            }
+            if (email != element.email || password != element.password) {
+                flex = 2
+            }
+
+
+        });
+        if (flex == 1) {
+            alert("Login successful")
+            location.assign("index.html")
+        } else {
+            alert("Please put correct data")
         }
-        if(flag==0){
-        alert("Please fill right details")
-    }else{
-        alert("LOGIN SUCESSFULL")
+
     }
-    });
-   
-  console.log(localdata)
 
 </script>
