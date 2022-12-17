@@ -13,21 +13,25 @@
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
       gap: 20px;
-
-
     }
 
     #cart-container>div {
       text-align: center;
       background-color: white;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      /* box-shadow: rgba(237, 6, 6, 0.4) 0px 0px 0px 2px, rgba(237, 6, 6, 0.4) 0px 0px 0px 2px,rgba(237, 6, 6, 0.4) 0px 0px 0px 2px,rgba(237, 6, 6, 0.4) 0px 0px 0px 2px; */
       /* grid-template-columns: repeat(4, 1fr); */
+      
     }
 
     #cart-container>div>img {
       width: 90 px;
 
     }
+    #cart-container>div:hover{
+      box-shadow: rgba(96, 215, 245, 0.25) 0px 54px 55px, rgba(96, 215, 245, 0.25) 0px -12px 30px, rgba(96, 215, 245, 0.25) 0px 4px 6px, rgba(96, 215, 245, 0.25) 0px 12px 13px, rgba(96, 215, 245, 0.25) 0px -3px 5px;
+
+    }
+    
 
     #cart-container>div>button:hover {
       background-color: green;
@@ -114,7 +118,7 @@
 
     #total {
       font-size: 100px;
-      color: white;
+      color: rgb(105, 247, 3);
     }
 
     #qr {
@@ -133,11 +137,20 @@
       border: 6px solid black;
       background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);  
-      color: black;
+      color: rgb(105, 247, 3);
+    }
+    #cOUT{
+        padding: 40px 40px 40px 40px;
+        color: rgb(105, 247, 3);
+        font-size: 40px;
+        margin-left: 5px;
+        border: 5px solid black;
+        background-color: #FF3CAC;
+        background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);  
     }
 
     body{
-      background-color: #FF3CAC;
+      background-color: #FF3CAC; 
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);  
     }
 
@@ -170,9 +183,15 @@
 <body>
   <div class="nav">
     <h1 id="Navbar">Welcome to cart Section</h1>
+   <a href="./checkout.html">  <button id="cOUT" >Pay Now</button></a>
+   <a href="./index.html">  <button id="cOUT" >Home</button></a>
+   <a href="./clothesproduct.html">  <button id="cOUT" >Cloths</button></a>
+   <a href="./shoseproduct.html">  <button id="cOUT" >Shose</button></a>
+   <a href="./Accproduct.html">  <button id="cOUT" >Others</button></a>
+
     <a id="home" href="./index.html">Home</a>
-    <!-- <a id="cart" href="./cart.html">Cart</a> -->
-    <!-- <div id="word"><img id="qr" src="./QR/istockphoto-828088276-1024x1024.jpg" alt=""></div> -->
+    <a id="cart" href="./cart.html">Cart</a> 
+    <div id="word"><img id="qr" src="./QR/istockphoto-828088276-1024x1024.jpg" alt=""></div>
   </div>
   <h1 id="total">Your Total Price is:- <span id="Cart-total">0</span></h1>
   <div id="cart-container">
