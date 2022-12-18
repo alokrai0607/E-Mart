@@ -1,10 +1,12 @@
-
 #nav{
     height: 160px;
     width: 100%;
     border: 1px solid white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
  
+ }
+ *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
  #nav_1{
      height: 20%;
@@ -171,7 +173,7 @@
      padding: 15px;
  }
 
- /*--------------------footer-------------*/
+ 
  #footer{
     height: 600px;
     width: 100%;
@@ -274,3 +276,151 @@
     width: 60%;
     margin: 50px 20%;
 }
+#top-2{
+    width: 60%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 1px 1px 3px -1px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#top-2:hover{
+    width: 60%;
+    box-shadow: rgba(8, 8, 240, 0.25) 0px 13px 27px -5px, rgba(5, 5, 238, 0.25) 3px 8px 16px -8px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#top-2>h2{
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px;
+}
+#top-2>div{
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+#top-2>div>input{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    text-align: left;
+    font-size: 20px;
+    background-color: #F3F3F3;
+    border: none;
+}
+
+#top-2>div>button{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+#mid-1{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 30px;
+}
+#mid-1>div>h2{
+    text-align: left;
+}
+#mid-1>div{
+width: 45%;
+padding-left: 20px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 1px 1px 3px -1px;
+}
+#mid-1>div:hover{
+    width: 45%;
+    padding-left: 20px;
+    box-shadow: rgba(8, 8, 240, 0.25) 0px 13px 27px -5px, rgba(5, 5, 238, 0.25) 3px 8px 16px -8px;
+    }
+#mid-1>div>div{
+    display: flex;
+    margin: 10px 0;
+}
+#mid-1>div>div svg{
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+#mid-2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#mid-2>div>svg{
+    width: 40px;
+    height: 50px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+#mid-2>div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 1px 1px 3px -1px;
+}
+#mid-2>div:hover{
+    box-shadow: rgba(8, 8, 240, 0.25) 0px 13px 27px -5px, rgba(5, 5, 238, 0.25) 3px 8px 16px -8px;
+}
+#bot-1{
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+#bot-1>div:first-child>div>svg{
+width: 10px;
+height: 10px;
+margin-top: 25px;
+margin-right: 5px;
+margin-left: 10px;
+}
+#bot-1>div{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 1px 1px 3px -1px;
+    width: 45%;
+    margin-bottom: 30px;
+}
+#bot-1>div:hover{
+    box-shadow: rgba(8, 8, 240, 0.25) 0px 13px 27px -5px, rgba(5, 5, 238, 0.25) 3px 8px 16px -8px;
+    width: 45%;
+    margin-bottom: 30px;
+}
+#bot-1>div>div{
+    display: flex;
+    margin: -20px 0;
+    padding: -10px 0;
+}
+#bot-1>div>h2{
+    text-align: left;
+    margin-left: 10px;
+}
+#bot-1>div:first-child>div>h4{
+    text-decoration: underline;
+}
+#bot-1>div>h5{
+    text-align: right;
+    margin-right: 10px;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+#bot-1>div:last-child>div{
+   margin: 10px 0;
+}
+
+#bot-1>div:last-child>div>svg{
+    width: 40px;
+    height: 40px;
+    margin:10px 20px;
+}
+#bot-1>div:last-child>div>div>h4{
+    margin-bottom: -10px;
+}
+#bot-1>div:last-child>div>div>p,#bot-1>div:last-child>div>div>h4{
+    text-align: left;
+
+ }

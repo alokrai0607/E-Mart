@@ -10,8 +10,14 @@
    width: 100%;
    border: 1px solid white;
    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  
+   position :fixed;
+   background-color: white;
+}
 
+#temp{
+    height: 160px;
+    width: 100%;
+    border: 1px solid white;   
 }
 #nav_1{
     height: 20%;
@@ -28,10 +34,11 @@
 #nav_3{
     height: 29%;
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid black;
     background-color: black;
     display: flex;
     align-items: center;
+    margin-top: 1px;
 }
 #nav_1_1{
     height: 100%;

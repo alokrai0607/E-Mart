@@ -71,12 +71,7 @@
       border-radius: 10px;
       margin-top: 60px;
     }
-    #filter:hover{
-      /* background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-
-    }
-
+  
     #product-container>div>button {
       background-color: silver;
       color: black;
@@ -324,7 +319,7 @@
       discription.innerText = element.Discription
 
       let price = document.createElement("h2")
-      price.innerText = "$" + element.Price
+      price.innerText = "₹" + element.Price
 
       let btn = document.createElement("button");
       btn.innerText = "Add To Cart"
