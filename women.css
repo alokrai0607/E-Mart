@@ -150,6 +150,10 @@
    
    
   }
+  #w3{
+    text-decoration: none;
+    color: white;
+  }
   .product-container::-webkit-scrollbar{
     display: none;
   }
