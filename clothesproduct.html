@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home Page</title>
-  <style>
+  <!-- <style>
     /* Write all necessery css here */
     
     #product-container {
@@ -182,6 +182,244 @@
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
       padding: 40px 40px;
       font-size: 250%;
+     }
+    
+
+    @media all and (min-width : 768px) and (max-width : 1024px) {
+
+      #product-container {
+        /* display: grid; */
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: auto; */
+        gap: 20px;
+      }
+    }
+
+    @media all and (min-width : 320px) and (max-width : 767px) {
+
+      #product-container {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: auto; */
+        gap: 20px;
+      }
+    }
+  </style> -->
+
+  <style>
+    /* Write all necessery css here */
+    
+    #product-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 40px;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+
+
+    }
+
+    #product-container>div {
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      border-radius: 10px;
+      perspective: 100px;
+
+    }
+    #product-container>div:hover{
+      box-shadow: rgba(96, 215, 245, 0.25) 0px 54px 55px, rgba(96, 215, 245, 0.25) 0px -12px 30px, rgba(96, 215, 245, 0.25) 0px 4px 6px, rgba(96, 215, 245, 0.25) 0px 12px 13px, rgba(96, 215, 245, 0.25) 0px -3px 5px;
+
+    }
+    #product-container>div>img {
+      width: 90 px;
+    }
+
+    #product-container>div>button:hover {
+      background-color: rgb(39, 222, 250);
+      color: black;
+      font-size: 30px;
+      width: 300px;
+    }
+     #home:hover {
+      background-color: rgb(89, 200, 231);
+      color: black;
+      font-size: 80px;
+      width: 300px;
+      border:1px  #FF3CAC;
+
+    }
+    #cart:hover {
+      background-color: rgb(89, 200, 231);
+      color: black;
+      font-size: 80px;
+      width: 300px;
+      border:1px  #FF3CAC;
+    } 
+
+    #filter {
+      height: 100px;
+      width: 50%;
+      text-align: center;
+      font-size: 30px;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      /* background-color:  #FF3CAC; */
+      background-color:black;
+      color: white;
+      border-radius: 10px;
+      margin-top: 60px;
+    }
+    #filter:hover{
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+
+    }
+
+    #product-container>div>button {
+      background-color: silver;
+      color: black;
+    }
+
+    #product-container>div>button {
+      background-color: black;
+      font-size: 30px;
+      width: 300px;
+      height: 50px;
+      color:white;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+       /* background-color: whitesmoke; */
+       border-radius: 6px; 
+       border: #FF3CAC;
+      text-align: center; 
+    }
+
+    #product-container>div :nth-child(1) {
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+      height: 300px;
+      width: 300px;
+    }
+
+    .nav {
+      width: 80%;
+      display: flex;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+      justify-content: space-evenly;
+      margin: auto;
+      text-align: center;
+    }
+
+    body {
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+
+
+    }
+
+    .nav>h1 {
+      font-size: 100px;
+      color: black;
+    }
+
+    #home {
+      height:100%;
+      width: 10%;
+      /* margin-left: 0px; */
+      /* padding: 15px 30px 15px 40px; */
+      /* font-size: 400%; */
+      font-size: 60px;
+      color: black;
+      border: 3px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+        background-color: black;
+        color: white;
+
+    }
+    #cart {
+      height:100%;
+      width:10%;
+      /* margin-left: 05px; */
+      /* padding: 15px 40px 15px 40px; */
+      /* font-size: 400%; */
+      font-size: 60px;
+      color: black;
+      border: 3px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      /* background-color: whitesmoke; */
+      background-color: black;
+        color: white;
+
+    }
+    #he {
+      margin-top:-6px;
+      height: 100px;
+      width: 60%;
+      color: black;
+      border: 3px solid black;
+      border-radius: 10px;
+      text-decoration: none;
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      background-color: whitesmoke; */
+      background-color: black;
+        color: white;
+        font-size: 60px;
+    }
+    body{
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      background-color: whitesmoke;
+
+    }
+     #flex{
+        /* border: 2px solid black; */
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 45%;
+        height: 100px;
+        margin-left: 1150px;
+     }
+     #shose>button{
+      height: 90%;
+      width: 350px;
+      background-color: black;
+      /* background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      /* padding: 40px 40px; */
+      font-size: 40px;
+      border-radius: 10px;
+      /* padding-bottom: 20px; */
+      margin-left: 120px;
+
+     }
+     a{
+      color: white;
+      text-decoration: none;
+     }
+     #Accesso>button{
+      height: 90%;
+      width: 350px;
+      background-color: black;
+      /* background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      /* padding: 40px 40px; */
+      font-size: 40px;
+      border-radius: 10px;
+      /* padding-bottom: 20px; */
+      margin-right: 120px;
      }
     
 
