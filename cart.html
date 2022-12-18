@@ -214,7 +214,7 @@
   display(cartItems);
 
   let total = cartItems.reduce((acc, element) => acc + element.Price, 0)
-  document.querySelector("#total").innerText = "YourTotal Cart Price is:-$" + total
+  document.querySelector("#total").innerText = "YourTotal Cart Price is:-₹" + total
 
 
 //******************************* For Shose Page ********************************//
@@ -292,7 +292,7 @@ cartItems.forEach(function (element, index) {
   discription.innerText = element.Discription
 
   let price = document.createElement("h3")
-  price.innerText = "$" + element.Price
+  price.innerText = "₹" + element.Price
 
   let span = document.createElement("span")
   //span.innerText = ""

@@ -272,15 +272,23 @@
 .btn_in{
     display: block;
     margin: auto;
-    background-color: cornflowerblue;
-    border-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
+    /* border-color: cornflowerblue; */
+    width: 150px;
+    height: 40px;
+    border-radius: 29px;
+    border: 1px silver;
+    background-color: black;
+    
    
 }
 .itag{
     text-decoration: none;
+    color: white;
+}
+.itag:hover{
     color: red;
 }
-
 /*--------------------footer-------------*/
 #footer{
     height: 600px;
