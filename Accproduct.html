@@ -13,7 +13,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
-      gap: 20px;
+      gap: 40px;
       /* background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
       background-color: whitesmoke;
@@ -26,29 +26,36 @@
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       border-radius: 10px;
       perspective: 100px;
-    }
 
+    }
+    #product-container>div:hover{
+      box-shadow: rgba(96, 215, 245, 0.25) 0px 54px 55px, rgba(96, 215, 245, 0.25) 0px -12px 30px, rgba(96, 215, 245, 0.25) 0px 4px 6px, rgba(96, 215, 245, 0.25) 0px 12px 13px, rgba(96, 215, 245, 0.25) 0px -3px 5px;
+
+    }
     #product-container>div>img {
       width: 90 px;
     }
 
     #product-container>div>button:hover {
-      background-color: rgb(110, 238, 110);
+      background-color: rgb(39, 222, 250);
       color: black;
-      font-size: 40px;
+      font-size: 30px;
       width: 300px;
     }
      #home:hover {
-      background-color: rgb(110, 238, 110);
+      background-color: rgb(89, 200, 231);
       color: black;
       font-size: 80px;
       width: 300px;
+      border:1px  #FF3CAC;
+
     }
     #cart:hover {
-      background-color: rgb(110, 238, 110);
+      background-color: rgb(89, 200, 231);
       color: black;
       font-size: 80px;
       width: 300px;
+      border:1px  #FF3CAC;
     } 
 
     #filter {
@@ -58,24 +65,29 @@
       font-size: 30px;
       /* background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-      background-color:  #FF3CAC;
+      /* background-color:  #FF3CAC; */
+      background-color:black;
+      color: white;
       border-radius: 10px;
       margin-top: 60px;
     }
     #filter:hover{
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+
     }
 
     #product-container>div>button {
-      background-color: blueviolet;
+      background-color: silver;
+      color: black;
     }
 
     #product-container>div>button {
-      background-color: #FF3CAC;
+      background-color: black;
       font-size: 30px;
       width: 300px;
       height: 50px;
+      color:white;
       /* background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
        /* background-color: whitesmoke; */
@@ -93,9 +105,14 @@
     }
 
     .nav {
+      width: 80%;
+      display: flex;
       /* background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
       background-color: whitesmoke;
+      justify-content: space-evenly;
+      margin: auto;
+      text-align: center;
     }
 
     body {
@@ -107,50 +124,60 @@
     }
 
     .nav>h1 {
-      display: inline;
       font-size: 100px;
-      color: black
+      color: black;
     }
 
     #home {
-      margin-left: 0px;
-      padding: 15px 30px 15px 40px;
-      font-size: 400%;
+      height:100%;
+      width: 10%;
+      /* margin-left: 0px; */
+      /* padding: 15px 30px 15px 40px; */
+      /* font-size: 400%; */
+      font-size: 60px;
       color: black;
       border: 3px solid black;
       border-radius: 10px;
       text-decoration: none;
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
       background-color: whitesmoke;
-
+        background-color: black;
+        color: white;
 
     }
     #cart {
-      margin-left: 05px;
-      padding: 15px 40px 15px 40px;
-      font-size: 400%;
+      height:100%;
+      width:10%;
+      /* margin-left: 05px; */
+      /* padding: 15px 40px 15px 40px; */
+      /* font-size: 400%; */
+      font-size: 60px;
       color: black;
       border: 3px solid black;
       border-radius: 10px;
       text-decoration: none;
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-      background-color: whitesmoke;
-
+      /* background-color: #FF3CAC;
+      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      /* background-color: whitesmoke; */
+      background-color: black;
+        color: white;
 
     }
     #he {
-      margin-left:00px;
+      margin-top:-6px;
       height: 100px;
-      width: 90%;
+      width: 60%;
       color: black;
       border: 3px solid black;
       border-radius: 10px;
       text-decoration: none;
-      background-color: #FF3CAC;
+      /* background-color: #FF3CAC;
       background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-      background-color: whitesmoke;
+      background-color: whitesmoke; */
+      background-color: black;
+        color: white;
+        font-size: 60px;
     }
     body{
       /* background-color: #FF3CAC;
@@ -168,20 +195,31 @@
         margin-left: 1150px;
      }
      #shose>button{
-      height: 100%;
-      width: 400px;
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-      padding: 40px 40px;
-      font-size: 250%;
+      height: 90%;
+      width: 350px;
+      background-color: black;
+      /* background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      /* padding: 40px 40px; */
+      font-size: 40px;
+      border-radius: 10px;
+      /* padding-bottom: 20px; */
+      margin-left: 120px;
+
+     }
+     a{
+      color: white;
+      text-decoration: none;
      }
      #Accesso>button{
-      height: 100%;
-      width: 400px;
-      background-color: #FF3CAC;
-      background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-      padding: 40px 40px;
-      font-size: 250%;
+      height: 90%;
+      width: 350px;
+      background-color: black;
+      /* background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
+      /* padding: 40px 40px; */
+      font-size: 40px;
+      border-radius: 10px;
+      /* padding-bottom: 20px; */
+      margin-right: 120px;
      }
     
 
@@ -209,7 +247,7 @@
 
 <body>
   <div class="nav">
-    <h1 id="he">Pleasure to see you welcome in E-Mart.</h1>
+    <p id="he">Pleasure to see you welcome in E-Mart</p>
     <a id="home" href="index.html">Home</a>
     <a id="cart" href="./cart.html">Cart</a>
   </div>
@@ -286,7 +324,7 @@
       discription.innerText = element.Discription
 
       let price = document.createElement("h2")
-      price.innerText = "₹" + element.Price
+      price.innerText = "$" + element.Price
 
       let btn = document.createElement("button");
       btn.innerText = "Add To Cart"
