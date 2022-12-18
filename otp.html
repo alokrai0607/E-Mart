@@ -61,6 +61,7 @@
         e.preventDefault();
         if (user.value == "1234") {
             alert("payment successful")
+            localStorage.removeItem("cart");
             window.location.href="deliverytask.html"
         }
         else {
