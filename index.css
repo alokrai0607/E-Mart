@@ -185,7 +185,7 @@
     
 }*/
 #nayadiv1{
-    height: 600px;
+    height: 800px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/hero_v6.png?v=1");
     background-size: 100%;
   
@@ -194,15 +194,15 @@
 
 
 #nayadiv2{
-    height: 600px;
+    height: 800px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/4.jpg?v=2");
     background-size: 100%;
     display: flex;
     align-items: center;
 }
 .nayadiv2_1{
-    height: 250px;
-    width: 450px;
+    height: 450px;
+    width: 850px;
     border: 1px solid transparent;
     display: flex;
     margin-left: 30px;
@@ -217,7 +217,7 @@
     border-radius: 6px;
 }
 #nayadiv3{
-    height: 600px;
+    height: 1000px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/5.jpg?v=2");
     background-size: 100%;
     display: flex;
@@ -225,14 +225,14 @@
     justify-content: end;
 }
 #nayadiv4{
-    height: 600px;
+    height: 1000px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/6.jpg?v=2");
     background-size: 100%;
     display: flex;
     align-items: center;
 }
 #nayadiv5{
-    height: 600px;
+    height: 1000px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/7.jpg?v=2");
     background-size: 100%;
     display: flex;
@@ -240,14 +240,14 @@
     justify-content: end;
 }
 #nayadiv6{
-    height: 600px;
+    height: 1000px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/8.jpg?v=2");
     background-size: 100%;
     display: flex;
     align-items: center;
 }
 #nayadiv7{
-    height: 600px;
+    height: 1000px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/9.jpg?v=2");
     background-size: 100%;
      display: flex;
@@ -255,14 +255,14 @@
     justify-content: end;
 }
 #nayadiv8{
-    height: 600px;
+    height: 1000px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/12.jpg?v=2");
     background-size: 100%;
     display: flex;
     align-items: center;
 }
 #nayadiv9{
-    height: 600px;
+    height: 1000px;
     background-image: url("https://secure.social.yoox.it/yspecial/NATALE/2022/MERGED/11.jpg?v=2");
     background-size: 100%;
     display: flex;
